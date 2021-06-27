@@ -1,0 +1,5647 @@
+{
+	"types" : [
+"1"
+	],
+	"alphabet" : [
+"bfCred|unassigned",
+"hostD|http(s)",
+"serD|unassigned",
+"hostD|remoteAccess",
+"vulnD|storage",
+"serD|remoteAccess",
+"bfCred|remoteAccess",
+"hostD|storage",
+"uPrivEsc|unassigned",
+"hostD|unassigned",
+"exfil|http(s)",
+"infoD|http(s)",
+"surf|http(s)",
+"CnC|http(s)",
+"surf|browser",
+"vulnD|remoteAccess",
+"ACE|email",
+"infoD|nameserver",
+"delivery|http(s)",
+"exfil|storage",
+"ACE|storage",
+"infoD|storage",
+"surf|storage",
+"netDOS|remoteAccess",
+"CnC|unassigned",
+"surf|unassigned",
+"serD|ATCcomm",
+"bfCred|email",
+"serD|dataSharing",
+"exfil|dataSharing",
+"rPrivEsc|nameserver",
+"CnC|remoteAccess",
+"rPrivEsc|remoteAccess",
+"serD|storage",
+"hostD|surveillance",
+"ACE|dataSharing",
+"infoD|dataSharing",
+"vulnD|http(s)",
+"exfil|unassigned",
+"ACE|unassigned",
+"infoD|unassigned",
+"vulnD|unassigned",
+"ACE|http(s)",
+"hostD|wireless",
+"netDOS|http(s)",
+"privEsc|http(s)",
+"uPrivEsc|http(s)",
+"surf|wireless",
+"acctManip|broadcast",
+"ACE|broadcast",
+"infoD|remoteAccess",
+"remoteexp|broadcast",
+"netDOS|broadcast",
+"delivery|unassigned",
+"netDOS|clocksync",
+"delivery|remoteAccess",
+"uPrivEsc|remoteAccess",
+"surf|remoteAccess",
+"ACE|remoteAccess",
+"exfil|remoteAccess",
+"bfCred|surveillance",
+"infoD|surveillance",
+"delivery|storage",
+"vulnD|surveillance",
+"surf|surveillance",
+"delivery|surveillance",
+"exfil|surveillance",
+"delivery|wireless",
+"CnC|email",
+"exfil|email",
+"dManip|nameserver",
+"uPrivEsc|storage",
+"delivery|browser",
+"exfil|browser",
+"CnC|storage",
+"serD|broadcast",
+"exfil|wireless",
+"infoD|wireless",
+"ACE|wireless",
+"vulnD|wireless",
+"PAexp|http(s)",
+"rPrivEsc|unassigned",
+"serD|surveillance",
+"servS|surveillance",
+"CnC|dataSharing",
+"vulnD|email",
+"rPrivEsc|surveillance"
+	],
+	"nodes" : [
+		{
+			"id" : 0,
+			"source" :  -1,
+			"label" : " 751 0",
+			"size" : 751,
+			"level" : 0,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"path_counts":{"0":751},"total_final":0,"total_paths":751,"trans_counts":{"1":{"ACE|broadcast":23,"ACE|dataSharing":8,"ACE|email":2,"ACE|http(s)":4,"ACE|remoteAccess":2,"CnC|http(s)":3,"CnC|storage":2,"CnC|unassigned":34,"acctManip|broadcast":30,"bfCred|email":23,"bfCred|remoteAccess":2,"bfCred|surveillance":1,"bfCred|unassigned":25,"dManip|nameserver":3,"delivery|browser":2,"delivery|http(s)":32,"delivery|remoteAccess":9,"delivery|storage":2,"delivery|surveillance":3,"delivery|unassigned":9,"delivery|wireless":1,"exfil|dataSharing":30,"exfil|email":1,"exfil|http(s)":75,"exfil|remoteAccess":3,"exfil|storage":9,"exfil|surveillance":4,"exfil|unassigned":17,"exfil|wireless":2,"hostD|http(s)":37,"hostD|remoteAccess":5,"hostD|storage":7,"hostD|surveillance":1,"hostD|unassigned":4,"hostD|wireless":4,"infoD|nameserver":1,"infoD|remoteAccess":11,"netDOS|broadcast":15,"netDOS|clocksync":1,"netDOS|remoteAccess":46,"privEsc|http(s)":1,"rPrivEsc|nameserver":1,"rPrivEsc|surveillance":1,"rPrivEsc|unassigned":3,"remoteexp|broadcast":7,"serD|ATCcomm":4,"serD|dataSharing":7,"serD|remoteAccess":33,"serD|storage":1,"serD|unassigned":74,"servS|surveillance":1,"surf|browser":2,"surf|http(s)":9,"surf|remoteAccess":1,"surf|storage":2,"surf|unassigned":2,"uPrivEsc|unassigned":3,"vulnD|http(s)":6,"vulnD|remoteAccess":10,"vulnD|storage":90}}},
+			"traces" : [ 750,749,748,747,746,745,744,743,742,741,740,739,738,737,736,735,734,733,732,731,730,729,728,727,726,725,724,723,722,721,720,719,718,717,716,715,714,713,712,711,710,709,708,707,706,705,704,703,702,701,700,699,698,697,696,695,694,693,692,691,690,689,688,687,686,685,684,683,682,681,680,679,678,677,676,675,674,673,672,671,670,669,668,667,666,665,664,663,662,661,660,659,658,657,656,655,654,653,652,651,650,649,648,647,646,645,644,643,642,641,640,639,638,637,636,635,634,633,632,631,630,629,628,627,626,625,624,623,622,621,620,619,618,617,616,615,614,613,612,611,610,609,608,607,606,605,604,603,602,601,600,599,598,597,596,595,594,593,592,591,590,589,588,587,586,585,584,583,582,581,580,579,578,577,576,575,574,573,572,571,570,569,568,567,566,565,564,563,562,561,560,559,558,557,556,555,554,553,552,551,550,549,548,547,546,545,544,543,542,541,540,539,538,537,536,535,534,533,532,531,530,529,528,527,526,525,524,523,522,521,520,519,518,517,516,515,514,513,512,511,510,509,508,507,506,505,504,503,502,501,500,499,498,497,496,495,494,493,492,491,490,489,488,487,486,485,484,483,482,481,480,479,478,477,476,475,474,473,472,471,470,469,468,467,466,465,464,463,462,461,460,459,458,457,456,455,454,453,452,451,450,449,448,447,446,445,444,443,442,441,440,439,438,437,436,435,434,433,432,431,430,429,428,427,426,425,424,423,422,421,420,419,418,417,416,415,414,413,412,411,410,409,408,407,406,405,404,403,402,401,400,399,398,397,396,395,394,393,392,391,390,389,388,387,386,385,384,383,382,381,380,379,378,377,376,375,374,373,372,371,370,369,368,367,366,365,364,363,362,361,360,359,358,357,356,355,354,353,352,351,350,349,348,347,346,345,344,343,342,341,340,339,338,337,336,335,334,333,332,331,330,329,328,327,326,325,324,323,322,321,320,319,318,317,316,315,314,313,312,311,310,309,308,307,306,305,304,303,302,301,300,299,298,297,296,295,294,293,292,291,290,289,288,287,286,285,284,283,282,281,280,279,278,277,276,275,274,273,272,271,270,269,268,267,266,265,264,263,262,261,260,259,258,257,256,255,254,253,252,251,250,249,248,247,246,245,244,243,242,241,240,239,238,237,236,235,234,233,232,231,230,229,228,227,226,225,224,223,222,221,220,219,218,217,216,215,214,213,212,211,210,209,208,207,206,205,204,203,202,201,200,199,198,197,196,195,194,193,192,191,190,189,188,187,186,185,184,183,182,181,180,179,178,177,176,175,174,173,172,171,170,169,168,167,166,165,164,163,162,161,160,159,158,157,156,155,154,153,152,151,150,149,148,147,146,145,144,143,142,141,140,139,138,137,136,135,134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,87,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,0]
+		},
+		{
+			"id" : 1,
+			"source" :  0,
+			"label" : " 27 4",
+			"size" : 31,
+			"level" : 2,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"final_counts":{"0":4},"path_counts":{"0":27},"total_final":4,"total_paths":27,"trans_counts":{"1":{"ACE|broadcast":0,"acctManip|broadcast":1,"bfCred|unassigned":1,"hostD|http(s)":3,"hostD|remoteAccess":2,"infoD|dataSharing":0,"infoD|remoteAccess":0,"serD|dataSharing":2,"serD|remoteAccess":2,"serD|unassigned":4,"uPrivEsc|http(s)":0,"uPrivEsc|unassigned":1,"vulnD|storage":11}}},
+			"traces" : [ 694,662,534,514,513,505,504,474,465,460,457,411,393,378,374,294,146,143,135,124,108,75,27,6,0,511,364,514,335,54,9]
+		},
+		{
+			"id" : 2,
+			"source" :  0,
+			"label" : " 82 21",
+			"size" : 103,
+			"level" : 6,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"final_counts":{"0":21},"path_counts":{"0":82},"total_final":21,"total_paths":82,"trans_counts":{"1":{"hostD|http(s)":2,"serD|ATCcomm":1,"serD|dataSharing":0,"serD|remoteAccess":9,"serD|storage":1,"serD|unassigned":9,"surf|http(s)":4,"vulnD|http(s)":2,"vulnD|storage":54}}},
+			"traces" : [ 594,588,584,569,560,558,536,533,476,467,351,350,349,344,112,111,110,109,105,101,71,70,63,57,53,51,47,45,44,36,35,34,33,28,10,5,1,541,541,583,583,593,583,121,121,441,663,144,121,446,587,587,592,587,573,434,18,539,713,438,104,35,105,5,128,104,46,39,376,136,491,377,563,493,377,376,136,34,88,572,10,360,475,594,471,340,334,65,156,410,747,386,598,467,476,618,483,495,455,538,526,427,116]
+		},
+		{
+			"id" : 3,
+			"source" :  0,
+			"label" : " 416 135",
+			"size" : 551,
+			"level" : 10,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"final_counts":{"0":135},"path_counts":{"0":416},"total_final":135,"total_paths":416,"trans_counts":{"1":{"bfCred|email":2,"bfCred|unassigned":2,"delivery|unassigned":1,"hostD|http(s)":34,"hostD|remoteAccess":8,"hostD|storage":6,"hostD|surveillance":0,"hostD|unassigned":1,"hostD|wireless":1,"infoD|dataSharing":0,"infoD|nameserver":2,"serD|ATCcomm":19,"serD|broadcast":0,"serD|dataSharing":3,"serD|remoteAccess":15,"serD|storage":4,"serD|unassigned":120,"surf|http(s)":3,"surf|storage":0,"surf|unassigned":0,"surf|wireless":0,"vulnD|remoteAccess":31,"vulnD|storage":164}}},
+			"traces" : [ 750,736,733,718,716,710,703,702,699,698,692,687,681,677,674,673,672,671,669,668,664,660,658,654,648,646,636,635,634,633,631,625,624,605,602,598,596,516,497,495,494,491,477,472,471,455,395,394,392,389,375,372,368,367,365,363,362,340,339,336,335,334,145,139,137,93,92,89,79,67,65,54,41,9,624,624,624,682,684,684,684,684,684,667,667,685,667,685,667,685,670,667,685,684,670,667,685,684,670,667,579,685,684,670,667,552,550,549,232,197,541,541,583,593,583,541,436,705,144,121,587,587,18,608,608,608,608,608,326,281,281,150,539,713,119,150,99,488,610,610,610,610,610,610,610,106,60,630,630,630,610,106,60,134,461,388,387,277,307,236,680,586,101,104,105,491,110,5,110,105,101,35,5,104,39,491,10,179,244,179,554,553,548,306,263,257,244,179,741,53,112,53,493,88,634,634,631,716,650,650,658,650,658,650,658,650,687,687,687,687,687,664,664,664,664,626,664,617,716,687,650,658,634,724,664,698,617,716,687,650,658,631,626,629,627,629,627,629,627,722,722,720,717,696,724,723,722,720,717,696,629,627,393,534,513,378,746,556,332,55,23,729,59,748,739,371,49,692,576,576,614,576,519,718,614,585,585,585,360,531,619,674,656,674,646,619,656,672,669,648,674,646,619,671,595,595,498,595,396,398,531,509,396,98,91,90,398,585,498,475,117,594,595,702,718,628,702,623,654,718,710,703,698,692,681,677,628,702,623,635,654,580,632,31,478,456,253,196,161,62,42,37,32,26,467,334,467,476,616,628,616,156,628,617,616,614,568,464,410,348,337,156,118,58,747,525,386,385,384,61,542,542,11,635,635,635,389,668,654,624,648,624,673,674,673,646,674,673,669,658,648,646,624,674,673,669,668,660,658,654,648,646,63,624,716,702,674,673,672,669,668,660,658,654,648,646,635,598,389,542,596,533,63,11,687,625,624,650,623,537,500,544,417,462,734,606,597,524,489,444,399,397,390,77,66,542,155,596,462,560,467,569,536,533,476,467,349,71,70,63,57,47,576,72,737,343,737,618,582,574,561,483,473,352,343,48,11,8,392,375,67,102,631,605,580,102,687,636,631,625,624,605,495,494,477,455,372,339,137,89,745,580,559,538,486,458,331,102,20,745,650,632,626,623,619,613,600,580,559,551,544,543,540,538,537,532,526,508,503,501,500,486,480,462,458,427,400,391,366,360,357,331,330,120,116,102,80,73,56,20,13]
+		},
+		{
+			"id" : 4,
+			"source" :  0,
+			"label" : " 509 54",
+			"size" : 563,
+			"level" : 14,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"final_counts":{"0":54},"path_counts":{"0":509},"total_final":54,"total_paths":509,"trans_counts":{"1":{"bfCred|email":2,"bfCred|unassigned":6,"hostD|http(s)":10,"hostD|remoteAccess":11,"hostD|storage":5,"hostD|unassigned":2,"hostD|wireless":1,"netDOS|remoteAccess":3,"serD|ATCcomm":15,"serD|broadcast":1,"serD|dataSharing":7,"serD|remoteAccess":67,"serD|storage":17,"serD|unassigned":261,"surf|http(s)":2,"surf|storage":2,"surf|unassigned":0,"vulnD|remoteAccess":22,"vulnD|storage":75}}},
+			"traces" : [ 745,737,735,725,693,656,650,637,632,626,623,619,618,613,600,595,585,582,580,579,576,574,564,561,559,551,544,543,542,540,538,537,532,526,523,519,518,511,508,503,501,500,498,486,483,480,475,473,470,469,462,458,454,427,400,398,391,366,364,361,360,357,352,343,331,330,160,155,147,128,120,117,116,104,102,100,80,78,74,73,72,56,48,46,39,30,20,13,11,8,624,579,705,617,682,497,684,670,667,550,197,541,541,541,593,583,121,144,121,587,587,592,587,573,18,359,608,326,439,429,267,281,281,539,345,713,545,438,119,150,99,488,610,610,610,610,610,106,60,630,461,388,387,511,277,317,307,277,209,236,233,680,586,406,403,342,21,254,101,35,104,105,101,35,104,39,491,10,110,5,5,46,46,128,46,136,179,244,179,554,553,548,327,324,312,328,308,306,263,257,244,179,238,741,36,112,53,36,340,455,563,563,493,376,136,88,634,634,631,716,658,658,626,650,687,658,664,629,627,723,629,627,717,720,474,393,393,393,534,514,513,474,457,393,378,146,124,108,746,556,502,332,130,97,55,23,729,333,59,748,739,371,49,692,692,692,470,576,614,633,394,523,470,30,519,692,718,614,660,576,585,585,585,585,585,3,600,531,360,600,360,531,31,619,595,595,595,509,98,91,90,585,498,595,396,475,594,710,703,677,702,702,702,123,103,31,196,601,530,478,456,253,196,161,123,103,62,42,37,32,31,26,471,334,334,476,467,471,334,65,467,476,611,337,616,628,616,464,337,156,628,617,616,614,611,568,562,464,410,348,338,337,156,118,58,747,742,700,607,572,529,527,525,522,521,386,385,384,200,61,22,542,542,542,11,635,672,635,389,542,596,11,500,668,654,63,648,669,648,624,674,646,673,544,544,417,122,28,462,462,734,399,462,734,606,597,524,489,444,417,399,397,390,122,77,66,4,725,637,542,398,155,33,28,100,544,596,462,560,560,44,349,467,349,47,594,569,560,558,536,533,476,467,351,349,344,111,71,70,63,57,51,47,44,34,33,28,10,1,576,576,576,454,576,454,160,72,363,737,473,343,737,735,618,595,582,576,574,561,519,483,473,454,361,352,343,160,100,78,72,48,11,8,736,497,392,375,363,67,619,544,508,102,631,605,339,580,102,736,687,671,664,636,631,625,624,605,602,596,516,497,495,494,491,477,455,395,392,375,372,368,367,365,363,362,339,335,145,137,92,89,67,54,41,9,745,619,580,559,551,544,540,538,532,508,486,462,458,400,357,331,102,20]
+		},
+		{
+			"id" : 5,
+			"source" :  0,
+			"label" : " 95 44",
+			"size" : 139,
+			"level" : 4,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"final_counts":{"0":44},"path_counts":{"0":95},"total_final":44,"total_paths":95,"trans_counts":{"1":{"CnC|unassigned":1,"bfCred|remoteAccess":1,"bfCred|unassigned":1,"hostD|http(s)":12,"hostD|remoteAccess":0,"hostD|storage":0,"hostD|unassigned":0,"infoD|remoteAccess":2,"serD|remoteAccess":15,"serD|storage":0,"serD|unassigned":14,"surf|browser":0,"surf|http(s)":3,"vulnD|http(s)":0,"vulnD|remoteAccess":2,"vulnD|storage":44}}},
+			"traces" : [ 738,734,712,606,597,563,546,531,524,509,493,489,444,417,399,397,396,390,377,376,353,136,122,98,95,91,90,88,85,77,66,4,3,497,705,541,583,593,583,587,608,267,317,233,101,39,136,328,308,112,53,36,377,340,598,455,526,716,717,474,502,585,585,34,750,585,3,3,546,95,88,3,750,79,585,65,471,74,34,750,79,656,531,498,31,42,524,57,600,360,73,91,585,65,471,334,572,522,542,542,544,725,398,33,100,544,399,725,637,585,542,518,498,475,398,155,117,74,594,344,34,33,28,10,1,560,735,595,100,78,544,508,363,596,516,362,145,462,357]
+		},
+		{
+			"id" : 7,
+			"source" :  0,
+			"label" : " 16 2",
+			"size" : 18,
+			"level" : 3,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"final_counts":{"0":2},"path_counts":{"0":16},"total_final":2,"total_paths":16,"trans_counts":{"1":{"bfCred|email":1,"hostD|http(s)":0,"hostD|remoteAccess":1,"hostD|storage":2,"serD|ATCcomm":1,"serD|remoteAccess":0,"serD|unassigned":4,"surf|http(s)":0,"surf|storage":3,"surf|surveillance":0,"vulnD|remoteAccess":0,"vulnD|storage":4}}},
+			"traces" : [ 599,535,355,126,107,38,29,693,147,406,146,4,336,680,586,117,480,120]
+		},
+		{
+			"id" : 9,
+			"source" :  0,
+			"label" : " 4 0",
+			"size" : 4,
+			"level" : 1,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  1,
+			"isblue" :  0,
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":4},"total_final":0,"total_paths":4,"trans_counts":{"1":{"serD|storage":0,"serD|unassigned":0,"surf|unassigned":0,"vulnD|storage":4}}},
+			"traces" : [ 603,591,575,154]
+		},
+		{
+			"id" : 10,
+			"source" :  0,
+			"label" : " 75 0",
+			"size" : 75,
+			"level" : 1,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":75},"total_final":0,"total_paths":75,"trans_counts":{"1":{"ACE|http(s)":40,"acctManip|broadcast":3,"delivery|http(s)":2,"exfil|http(s)":1,"hostD|http(s)":2,"infoD|http(s)":18,"serD|unassigned":1,"surf|http(s)":1,"vulnD|http(s)":4,"vulnD|storage":3}}},
+			"traces" : [ 721,719,715,713,708,706,704,701,690,678,676,675,663,661,659,655,653,652,651,649,647,645,639,593,592,587,583,581,573,571,566,545,541,539,507,488,482,453,452,451,447,446,445,443,441,440,439,438,437,436,435,434,433,431,430,429,428,426,425,421,420,419,418,408,345,243,205,173,166,157,153,151,149,119,12]
+		},
+		{
+			"id" : 15,
+			"source" :  0,
+			"label" : " 32 0",
+			"size" : 32,
+			"level" : 1,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"path_counts":{"0":32},"total_final":0,"total_paths":32,"trans_counts":{"1":{"ACE|broadcast":2,"exfil|http(s)":28,"infoD|http(s)":0,"netDOS|broadcast":1,"surf|http(s)":1}}},
+			"traces" : [ 689,515,506,329,326,315,314,287,286,284,283,280,274,273,256,255,252,251,240,239,237,235,231,210,207,178,176,170,168,164,141,19]
+		},
+		{
+			"id" : 16,
+			"source" :  0,
+			"label" : " 9 0",
+			"size" : 9,
+			"level" : 1,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"path_counts":{"0":9},"total_final":0,"total_paths":9,"trans_counts":{"1":{"ACE|broadcast":0,"ACE|storage":7,"delivery|storage":1,"uPrivEsc|storage":0,"vulnD|storage":1}}},
+			"traces" : [ 743,680,657,586,406,403,342,246,21]
+		},
+		{
+			"id" : 18,
+			"source" :  0,
+			"label" : " 70 0",
+			"size" : 70,
+			"level" : 3,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":70},"total_final":0,"total_paths":70,"trans_counts":{"1":{"ACE|dataSharing":3,"ACE|remoteAccess":1,"CnC|unassigned":33,"bfCred|email":2,"bfCred|unassigned":3,"exfil|dataSharing":3,"netDOS|remoteAccess":6,"remoteexp|broadcast":2,"serD|dataSharing":1,"serD|unassigned":1,"vulnD|remoteAccess":1,"vulnD|storage":14}}},
+			"traces" : [ 749,747,746,742,732,730,700,665,607,572,556,529,528,527,525,522,521,520,502,466,463,461,459,388,387,386,385,384,373,370,332,228,219,212,206,203,200,134,130,97,94,61,55,40,23,22,528,520,463,461,388,387,226,224,223,220,217,215,741,728,748,739,729,697,371,333,187,184,59,49]
+		},
+		{
+			"id" : 19,
+			"source" :  0,
+			"label" : " 73 0",
+			"size" : 73,
+			"level" : 2,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":73},"total_final":0,"total_paths":73,"trans_counts":{"1":{"CnC|http(s)":0,"CnC|unassigned":6,"acctManip|broadcast":1,"bfCred|email":0,"bfCred|unassigned":1,"hostD|http(s)":3,"hostD|remoteAccess":2,"infoD|http(s)":0,"infoD|unassigned":0,"netDOS|remoteAccess":1,"rPrivEsc|remoteAccess":2,"rPrivEsc|unassigned":3,"remoteexp|broadcast":6,"serD|remoteAccess":2,"serD|storage":2,"serD|unassigned":6,"surf|http(s)":1,"vulnD|storage":37}}},
+			"traces" : [ 686,630,628,622,621,620,617,616,614,611,610,608,570,568,562,555,517,464,410,359,348,346,338,337,188,186,185,156,118,115,106,69,60,58,622,622,608,517,359,732,226,220,217,215,741,748,739,697,371,49,749,747,742,732,700,665,607,572,529,527,525,522,521,386,385,384,373,370,206,200,134,61,22]
+		},
+		{
+			"id" : 22,
+			"source" :  0,
+			"label" : " 23 0",
+			"size" : 23,
+			"level" : 1,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":23},"total_final":0,"total_paths":23,"trans_counts":{"1":{"bfCred|email":1,"infoD|remoteAccess":0,"serD|dataSharing":0,"serD|remoteAccess":4,"serD|unassigned":3,"surf|http(s)":0,"vulnD|storage":15}}},
+			"traces" : [ 604,601,578,530,478,468,456,369,253,196,161,140,127,125,123,103,62,52,42,37,32,31,26]
+		},
+		{
+			"id" : 23,
+			"source" :  0,
+			"label" : " 7 7",
+			"size" : 14,
+			"level" : 2,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"final_counts":{"0":7},"path_counts":{"0":7},"total_final":7,"total_paths":7,"trans_counts":{"1":{"hostD|http(s)":0,"hostD|storage":0,"serD|dataSharing":3,"serD|remoteAccess":1,"serD|storage":1,"serD|unassigned":0,"vulnD|remoteAccess":0,"vulnD|storage":2}}},
+			"traces" : [ 512,510,96,87,84,83,82,602,395,209,717,703,467,44]
+		},
+		{
+			"id" : 24,
+			"source" :  0,
+			"label" : " 42 0",
+			"size" : 42,
+			"level" : 1,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":42},"total_final":0,"total_paths":42,"trans_counts":{"1":{"ACE|dataSharing":11,"CnC|unassigned":4,"exfil|dataSharing":12,"netDOS|clocksync":1,"netDOS|remoteAccess":12,"serD|unassigned":1,"vulnD|storage":1}}},
+			"traces" : [ 748,741,739,731,729,728,697,666,644,643,642,641,640,371,333,193,192,191,189,187,184,183,158,138,132,131,81,59,49,43,741,728,191,138,741,731,728,191,158,138,132,131]
+		},
+		{
+			"id" : 28,
+			"source" :  0,
+			"label" : " 24 0",
+			"size" : 24,
+			"level" : 2,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":24},"total_final":0,"total_paths":24,"trans_counts":{"1":{"ACE|broadcast":3,"ACE|unassigned":14,"acctManip|broadcast":3,"bfCred|surveillance":1,"exfil|unassigned":1,"hostD|unassigned":1,"netDOS|broadcast":1,"uPrivEsc|http(s)":0}}},
+			"traces" : [ 683,590,589,487,432,424,423,422,416,409,405,401,347,227,221,202,114,323,322,321,320,272,182,181]
+		},
+		{
+			"id" : 32,
+			"source" :  0,
+			"label" : " 52 13",
+			"size" : 65,
+			"level" : 3,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"final_counts":{"0":13},"path_counts":{"0":52},"total_final":13,"total_paths":52,"trans_counts":{"1":{"ACE|broadcast":5,"ACE|remoteAccess":1,"CnC|unassigned":1,"acctManip|broadcast":30,"bfCred|unassigned":2,"hostD|http(s)":0,"infoD|http(s)":5,"infoD|nameserver":2,"infoD|remoteAccess":0,"rPrivEsc|remoteAccess":0,"remoteexp|broadcast":1,"serD|dataSharing":1,"serD|storage":1,"surf|http(s)":0,"surf|unassigned":0,"vulnD|http(s)":0,"vulnD|storage":3}}},
+			"traces" : [ 711,709,450,413,309,305,304,303,302,301,300,299,298,297,296,295,293,292,291,285,281,268,267,241,232,208,198,177,171,167,719,663,659,647,205,309,305,304,303,302,301,300,299,298,297,295,293,292,291,309,305,304,303,302,301,300,299,298,297,296,295,293,292,291,198]
+		},
+		{
+			"id" : 33,
+			"source" :  0,
+			"label" : " 45 0",
+			"size" : 45,
+			"level" : 4,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":45},"total_final":0,"total_paths":45,"trans_counts":{"1":{"acctManip|broadcast":3,"bfCred|email":2,"infoD|http(s)":2,"infoD|remoteAccess":10,"infoD|unassigned":0,"remoteexp|broadcast":18,"uPrivEsc|unassigned":0,"vulnD|remoteAccess":2,"vulnD|storage":8}}},
+			"traces" : [ 327,325,324,317,312,311,307,282,279,277,271,265,261,257,249,247,244,209,179,172,169,165,163,326,314,274,252,240,285,281,267,232,177,328,318,308,306,266,263,250,238,236,233,197,174]
+		},
+		{
+			"id" : 34,
+			"source" :  0,
+			"label" : " 31 10",
+			"size" : 41,
+			"level" : 3,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"final_counts":{"0":10},"path_counts":{"0":31},"total_final":10,"total_paths":31,"trans_counts":{"1":{"hostD|http(s)":3,"hostD|remoteAccess":0,"hostD|storage":1,"infoD|remoteAccess":1,"serD|remoteAccess":1,"serD|unassigned":5,"surf|http(s)":0,"surf|wireless":0,"vulnD|http(s)":1,"vulnD|remoteAccess":3,"vulnD|storage":16}}},
+			"traces" : [ 554,553,552,550,549,548,383,382,381,380,379,252,267,232,226,220,215,259,254,234,230,180,175,327,324,312,311,328,308,306,263,265,261,257,249,247,244,179,169,238,197]
+		},
+		{
+			"id" : 35,
+			"source" :  0,
+			"label" : " 15 0",
+			"size" : 15,
+			"level" : 1,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"path_counts":{"0":15},"total_final":0,"total_paths":15,"trans_counts":{"1":{"ACE|broadcast":12,"remoteexp|broadcast":1,"serD|remoteAccess":0,"serD|unassigned":1,"vulnD|storage":1}}},
+			"traces" : [ 328,318,308,306,266,264,263,250,242,238,236,233,199,197,174]
+		},
+		{
+			"id" : 36,
+			"source" :  0,
+			"label" : " 9 0",
+			"size" : 9,
+			"level" : 1,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"path_counts":{"0":9},"total_final":0,"total_paths":9,"trans_counts":{"1":{"CnC|unassigned":0,"exfil|remoteAccess":2,"exfil|unassigned":7}}},
+			"traces" : [ 323,322,321,320,272,229,204,182,181]
+		},
+		{
+			"id" : 38,
+			"source" :  0,
+			"label" : " 9 0",
+			"size" : 9,
+			"level" : 1,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"path_counts":{"0":9},"total_final":0,"total_paths":9,"trans_counts":{"1":{"CnC|unassigned":1,"exfil|remoteAccess":7,"uPrivEsc|remoteAccess":1}}},
+			"traces" : [ 226,224,223,220,217,215,213,195,190]
+		},
+		{
+			"id" : 69,
+			"source" :  3,
+			"label" : " 10 14",
+			"size" : 24,
+			"level" : 13,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"final_counts":{"0":14},"path_counts":{"0":10},"total_final":14,"total_paths":10,"trans_counts":{"1":{"hostD|http(s)":2,"hostD|remoteAccess":0,"infoD|dataSharing":0,"serD|ATCcomm":0,"serD|dataSharing":0,"serD|remoteAccess":1,"serD|unassigned":5,"surf|remoteAccess":0,"surf|storage":1,"vulnD|storage":1}}},
+			"traces" : [ 543,503,330,550,197,685,684,670,667,479,592,326,403,579,457,130,523,31,594,736,634,49,718,536]
+		},
+		{
+			"id" : 72,
+			"source" :  3,
+			"label" : " 59 4",
+			"size" : 63,
+			"level" : 13,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"final_counts":{"0":4},"path_counts":{"0":59},"total_final":4,"total_paths":59,"trans_counts":{"1":{"hostD|remoteAccess":0,"serD|ATCcomm":1,"serD|broadcast":2,"serD|remoteAccess":4,"serD|storage":4,"serD|surveillance":1,"serD|unassigned":41,"surf|remoteAccess":0,"surf|surveillance":0,"vulnD|http(s)":0,"vulnD|storage":6}}},
+			"traces" : [ 718,710,703,699,698,692,681,677,617,624,579,684,670,685,667,705,359,610,610,630,634,631,617,658,650,687,664,627,724,723,722,720,717,696,682,679,629,627,633,660,576,619,656,611,616,672,669,648,674,646,673,497,619,671,628,702,623,635,668,654,624,580,632]
+		},
+		{
+			"id" : 74,
+			"source" :  3,
+			"label" : " 26 8",
+			"size" : 34,
+			"level" : 12,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"final_counts":{"0":8},"path_counts":{"0":26},"total_final":8,"total_paths":26,"trans_counts":{"1":{"hostD|http(s)":3,"hostD|remoteAccess":0,"hostD|storage":0,"serD|unassigned":11,"vulnD|remoteAccess":0,"vulnD|storage":12}}},
+			"traces" : [ 634,633,394,238,36,664,724,108,474,333,523,470,30,742,527,596,51,519,664,339,698,692,718,617,614,58,716,687,650,660,658,576,631,626]
+		},
+		{
+			"id" : 85,
+			"source" :  4,
+			"label" : " 7 10",
+			"size" : 17,
+			"level" : 15,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"final_counts":{"0":10},"path_counts":{"0":7},"total_final":10,"total_paths":7,"trans_counts":{"1":{"hostD|http(s)":1,"hostD|remoteAccess":2,"hostD|unassigned":0,"serD|broadcast":0,"serD|unassigned":2,"vulnD|storage":2}}},
+			"traces" : [ 564,469,345,110,455,97,531,196,607,521,63,558,351,111,368,367,365]
+		},
+		{
+			"id" : 114,
+			"source" :  10,
+			"label" : " 40 0",
+			"size" : 40,
+			"level" : 2,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"path_counts":{"0":40},"total_final":0,"total_paths":40,"trans_counts":{"1":{"CnC|unassigned":1,"acctManip|broadcast":5,"hostD|http(s)":0,"infoD|http(s)":34,"uPrivEsc|http(s)":0,"vulnD|http(s)":0}}},
+			"traces" : [ 719,713,708,676,663,659,649,647,593,592,587,583,581,573,571,545,541,539,507,488,482,453,452,441,439,438,437,434,426,425,421,418,408,345,205,157,153,151,149,119]
+		},
+		{
+			"id" : 124,
+			"source" :  15,
+			"label" : " 28 0",
+			"size" : 28,
+			"level" : 2,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":28},"total_final":0,"total_paths":28,"trans_counts":{"1":{"ACE|broadcast":5,"ACE|dataSharing":1,"acctManip|broadcast":4,"delivery|http(s)":0,"netDOS|broadcast":1,"netDOS|http(s)":1,"netDOS|remoteAccess":1,"privEsc|http(s)":3,"remoteexp|broadcast":2,"surf|http(s)":6,"uPrivEsc|http(s)":4,"vulnD|storage":0}}},
+			"traces" : [ 689,515,506,329,326,314,287,286,284,283,280,274,273,256,255,252,251,240,239,237,235,210,207,178,176,170,168,141]
+		},
+		{
+			"id" : 129,
+			"source" :  16,
+			"label" : " 7 0",
+			"size" : 7,
+			"level" : 2,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"path_counts":{"0":7},"total_final":0,"total_paths":7,"trans_counts":{"1":{"infoD|storage":7}}},
+			"traces" : [ 680,657,586,406,403,342,21]
+		},
+		{
+			"id" : 167,
+			"source" :  24,
+			"label" : " 19 5",
+			"size" : 24,
+			"level" : 3,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"final_counts":{"0":5},"path_counts":{"0":19},"total_final":5,"total_paths":19,"trans_counts":{"1":{"ACE|dataSharing":5,"CnC|remoteAccess":1,"CnC|unassigned":0,"acctManip|broadcast":4,"bfCred|email":1,"exfil|dataSharing":1,"hostD|remoteAccess":0,"infoD|dataSharing":0,"rPrivEsc|remoteAccess":0,"serD|dataSharing":2,"serD|unassigned":1,"vulnD|remoteAccess":1,"vulnD|storage":3}}},
+			"traces" : [ 666,644,643,642,641,640,193,192,183,81,643,642,641,640,86,191,225,222,218,216,214,211,201,86]
+		},
+		{
+			"id" : 174,
+			"source" :  28,
+			"label" : " 14 0",
+			"size" : 14,
+			"level" : 3,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"path_counts":{"0":14},"total_final":0,"total_paths":14,"trans_counts":{"1":{"infoD|unassigned":13,"surf|unassigned":1}}},
+			"traces" : [ 683,590,589,487,432,424,423,422,409,347,227,221,202,114]
+		},
+		{
+			"id" : 196,
+			"source" :  33,
+			"label" : " 31 0",
+			"size" : 31,
+			"level" : 7,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":31},"total_final":0,"total_paths":31,"trans_counts":{"1":{"acctManip|broadcast":25,"bfCred|email":2,"bfCred|unassigned":1,"infoD|nameserver":0,"infoD|remoteAccess":3,"serD|dataSharing":0,"vulnD|remoteAccess":0}}},
+			"traces" : [ 279,271,265,261,257,249,247,244,179,172,169,252,285,177,185,226,220,217,215,206,278,259,254,234,230,180,175,266,250,238,197]
+		},
+		{
+			"id" : 210,
+			"source" :  38,
+			"label" : " 7 0",
+			"size" : 7,
+			"level" : 2,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"path_counts":{"0":7},"total_final":0,"total_paths":7,"trans_counts":{"1":{"ACE|dataSharing":0,"ACE|remoteAccess":0,"CnC|unassigned":1,"hostD|remoteAccess":0,"netDOS|remoteAccess":6}}},
+			"traces" : [ 226,224,223,220,217,215,213]
+		},
+		{
+			"id" : 314,
+			"source" :  114,
+			"label" : " 57 0",
+			"size" : 57,
+			"level" : 5,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":57},"total_final":0,"total_paths":57,"trans_counts":{"1":{"hostD|http(s)":15,"serD|dataSharing":1,"serD|remoteAccess":1,"serD|unassigned":3,"surf|http(s)":5,"vulnD|http(s)":19,"vulnD|storage":13}}},
+			"traces" : [ 713,708,676,649,593,592,587,583,581,573,571,545,541,539,507,488,482,453,452,441,439,438,437,434,425,421,418,408,345,157,153,151,149,119,719,663,659,647,205,706,704,701,661,655,653,566,446,445,443,440,436,435,430,429,420,419,12]
+		},
+		{
+			"id" : 339,
+			"source" :  129,
+			"label" : " 7 0",
+			"size" : 7,
+			"level" : 3,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"path_counts":{"0":7},"total_final":0,"total_paths":7,"trans_counts":{"1":{"hostD|storage":1,"vulnD|storage":6}}},
+			"traces" : [ 680,657,586,406,403,342,21]
+		},
+		{
+			"id" : 404,
+			"source" :  174,
+			"label" : " 13 0",
+			"size" : 13,
+			"level" : 4,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":13},"total_final":0,"total_paths":13,"trans_counts":{"1":{"hostD|unassigned":4,"surf|unassigned":2,"vulnD|storage":2,"vulnD|unassigned":5}}},
+			"traces" : [ 683,590,589,487,424,423,422,409,347,227,221,202,114]
+		},
+		{
+			"id" : 437,
+			"source" :  196,
+			"label" : " 25 0",
+			"size" : 25,
+			"level" : 8,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":25},"total_final":0,"total_paths":25,"trans_counts":{"1":{"ACE|broadcast":0,"CnC|unassigned":0,"acctManip|broadcast":0,"bfCred|email":1,"bfCred|unassigned":2,"hostD|http(s)":0,"hostD|remoteAccess":1,"infoD|http(s)":0,"infoD|nameserver":0,"infoD|remoteAccess":20,"rPrivEsc|remoteAccess":0,"surf|http(s)":0,"surf|unassigned":0,"uPrivEsc|remoteAccess":0,"vulnD|http(s)":0,"vulnD|storage":1}}},
+			"traces" : [ 279,265,261,257,249,247,244,179,169,252,185,226,220,215,206,278,259,254,234,230,180,175,266,238,197]
+		},
+		{
+			"id" : 540,
+			"source" :  314,
+			"label" : " 21 0",
+			"size" : 21,
+			"level" : 7,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":21},"total_final":0,"total_paths":21,"trans_counts":{"1":{"hostD|http(s)":0,"serD|dataSharing":0,"serD|remoteAccess":0,"serD|unassigned":0,"surf|http(s)":21,"vulnD|storage":0}}},
+			"traces" : [ 708,649,488,437,408,453,439,205,445,436,429,719,659,647,706,704,701,655,653,435,430]
+		},
+		{
+			"id" : 542,
+			"source" :  314,
+			"label" : " 13 0",
+			"size" : 13,
+			"level" : 6,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":13},"total_final":0,"total_paths":13,"trans_counts":{"1":{"bfCred|unassigned":0,"hostD|http(s)":6,"hostD|remoteAccess":0,"hostD|storage":1,"hostD|unassigned":0,"serD|ATCcomm":0,"serD|broadcast":1,"serD|dataSharing":0,"serD|remoteAccess":1,"serD|storage":0,"serD|unassigned":2,"surf|http(s)":2,"surf|storage":0,"surf|unassigned":0,"vulnD|remoteAccess":0,"vulnD|storage":0}}},
+			"traces" : [ 453,452,439,425,153,151,205,445,440,436,429,419,12]
+		},
+		{
+			"id" : 545,
+			"source" :  314,
+			"label" : " 24 1",
+			"size" : 25,
+			"level" : 7,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":24},"total_final":1,"total_paths":24,"trans_counts":{"1":{"hostD|http(s)":5,"hostD|remoteAccess":1,"serD|ATCcomm":0,"serD|remoteAccess":1,"serD|unassigned":1,"surf|http(s)":14,"vulnD|storage":2}}},
+			"traces" : [ 593,592,587,583,581,573,571,541,539,507,441,434,421,345,157,149,663,354,144,142,133,129,121,446,443]
+		},
+		{
+			"id" : 625,
+			"source" :  404,
+			"label" : " 5 0",
+			"size" : 5,
+			"level" : 5,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":5},"total_final":0,"total_paths":5,"trans_counts":{"1":{"hostD|unassigned":4,"surf|unassigned":1}}},
+			"traces" : [ 683,347,221,202,114]
+		},
+		{
+			"id" : 744,
+			"source" :  545,
+			"label" : " 30 25",
+			"size" : 55,
+			"level" : 12,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"data" :  {"final_counts":{"0":25},"path_counts":{"0":30},"total_final":25,"total_paths":30,"trans_counts":{"1":{"exfil|http(s)":1,"hostD|http(s)":5,"infoD|nameserver":0,"serD|dataSharing":1,"serD|remoteAccess":2,"serD|unassigned":5,"surf|browser":0,"surf|http(s)":4,"vulnD|remoteAccess":1,"vulnD|storage":11}}},
+			"traces" : [ 593,592,587,583,581,573,571,541,539,507,434,345,157,149,453,439,205,445,436,429,719,659,647,713,545,438,119,566,329,284,283,239,235,170,740,714,705,638,481,150,99,76,18,708,649,488,437,408,706,704,701,655,653,435,430]
+		},
+		{
+			"id" : 6,
+			"source" :  0,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 1,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"serD|remoteAccess":1,"vulnD|storage":1}}},
+			"traces" : [ 499,2]
+		},
+		{
+			"id" : 8,
+			"source" :  0,
+			"label" : " 3 0",
+			"size" : 3,
+			"level" : 1,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":3},"total_final":0,"total_paths":3,"trans_counts":{"1":{"hostD|unassigned":1,"infoD|remoteAccess":0,"serD|unassigned":1,"vulnD|storage":1}}},
+			"traces" : [ 492,113,7]
+		},
+		{
+			"id" : 11,
+			"source" :  0,
+			"label" : " 3 0",
+			"size" : 3,
+			"level" : 1,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":3},"total_final":0,"total_paths":3,"trans_counts":{"1":{"CnC|http(s)":1,"CnC|unassigned":1,"PAexp|http(s)":0,"surf|http(s)":0,"vulnD|storage":1}}},
+			"traces" : [ 159,16,14]
+		},
+		{
+			"id" : 12,
+			"source" :  0,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 1,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"hostD|http(s)":1,"serD|unassigned":1}}},
+			"traces" : [ 25,15]
+		},
+		{
+			"id" : 13,
+			"source" :  0,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 1,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"CnC|email":1,"surf|http(s)":1}}},
+			"traces" : [ 275,17]
+		},
+		{
+			"id" : 14,
+			"source" :  0,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 1,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"hostD|http(s)":1}}},
+			"traces" : [ 68]
+		},
+		{
+			"id" : 17,
+			"source" :  0,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 1,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"surf|storage":1,"vulnD|storage":1}}},
+			"traces" : [ 744,727]
+		},
+		{
+			"id" : 20,
+			"source" :  0,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 1,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"serD|unassigned":1,"vulnD|storage":1}}},
+			"traces" : [ 707,24]
+		},
+		{
+			"id" : 21,
+			"source" :  0,
+			"label" : " 4 0",
+			"size" : 4,
+			"level" : 1,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":4},"total_final":0,"total_paths":4,"trans_counts":{"1":{"hostD|remoteAccess":1,"serD|unassigned":2,"vulnD|storage":1}}},
+			"traces" : [ 691,577,547,496]
+		},
+		{
+			"id" : 25,
+			"source" :  0,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 1,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"CnC|remoteAccess":1}}},
+			"traces" : [ 50]
+		},
+		{
+			"id" : 26,
+			"source" :  0,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 1,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"vulnD|storage":1}}},
+			"traces" : [ 148]
+		},
+		{
+			"id" : 27,
+			"source" :  0,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 1,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"serD|unassigned":1,"vulnD|storage":0}}},
+			"traces" : [ 64]
+		},
+		{
+			"id" : 29,
+			"source" :  0,
+			"label" : " 4 0",
+			"size" : 4,
+			"level" : 1,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":4},"total_final":0,"total_paths":4,"trans_counts":{"1":{"acctManip|broadcast":2,"hostD|http(s)":1,"vulnD|http(s)":1}}},
+			"traces" : [ 695,565,442,162]
+		},
+		{
+			"id" : 30,
+			"source" :  0,
+			"label" : " 4 0",
+			"size" : 4,
+			"level" : 1,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":4},"total_final":0,"total_paths":4,"trans_counts":{"1":{"serD|unassigned":0,"vulnD|storage":4}}},
+			"traces" : [ 567,557,341,152]
+		},
+		{
+			"id" : 31,
+			"source" :  0,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 1,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"infoD|nameserver":1}}},
+			"traces" : [ 490]
+		},
+		{
+			"id" : 37,
+			"source" :  0,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 1,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"ACE|dataSharing":0,"CnC|unassigned":1}}},
+			"traces" : [ 194]
+		},
+		{
+			"id" : 39,
+			"source" :  0,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 1,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"surf|surveillance":1}}},
+			"traces" : [ 485]
+		},
+		{
+			"id" : 40,
+			"source" :  0,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 1,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"acctManip|broadcast":1,"remoteexp|broadcast":1}}},
+			"traces" : [ 270,269]
+		},
+		{
+			"id" : 41,
+			"source" :  0,
+			"label" : " 3 0",
+			"size" : 3,
+			"level" : 1,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":3},"total_final":0,"total_paths":3,"trans_counts":{"1":{"ACE|remoteAccess":1,"hostD|remoteAccess":2}}},
+			"traces" : [ 415,414,412]
+		},
+		{
+			"id" : 42,
+			"source" :  0,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 1,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"infoD|surveillance":1,"infoD|unassigned":0}}},
+			"traces" : [ 245]
+		},
+		{
+			"id" : 43,
+			"source" :  0,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 1,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"bfCred|surveillance":0,"exfil|storage":2}}},
+			"traces" : [ 313,310]
+		},
+		{
+			"id" : 44,
+			"source" :  0,
+			"label" : " 3 0",
+			"size" : 3,
+			"level" : 1,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":3},"total_final":0,"total_paths":3,"trans_counts":{"1":{"exfil|surveillance":3}}},
+			"traces" : [ 262,260,248]
+		},
+		{
+			"id" : 45,
+			"source" :  0,
+			"label" : " 4 0",
+			"size" : 4,
+			"level" : 1,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":4},"total_final":0,"total_paths":4,"trans_counts":{"1":{"ACE|remoteAccess":4,"remoteexp|broadcast":0,"surf|surveillance":0}}},
+			"traces" : [ 484,407,404,402]
+		},
+		{
+			"id" : 46,
+			"source" :  0,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 1,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"ACE|broadcast":1}}},
+			"traces" : [ 258]
+		},
+		{
+			"id" : 47,
+			"source" :  0,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 1,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"ACE|broadcast":1}}},
+			"traces" : [ 276]
+		},
+		{
+			"id" : 48,
+			"source" :  0,
+			"label" : " 3 0",
+			"size" : 3,
+			"level" : 1,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":3},"total_final":0,"total_paths":3,"trans_counts":{"1":{"ACE|broadcast":1,"netDOS|broadcast":2}}},
+			"traces" : [ 290,289,288]
+		},
+		{
+			"id" : 49,
+			"source" :  0,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 1,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"exfil|browser":2}}},
+			"traces" : [ 319,316]
+		},
+		{
+			"id" : 50,
+			"source" :  0,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 1,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"CnC|storage":1,"CnC|unassigned":1}}},
+			"traces" : [ 358,356]
+		},
+		{
+			"id" : 51,
+			"source" :  0,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 1,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"ACE|wireless":1,"infoD|wireless":1}}},
+			"traces" : [ 449,448]
+		},
+		{
+			"id" : 52,
+			"source" :  0,
+			"label" : " 3 0",
+			"size" : 3,
+			"level" : 1,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":3},"total_final":0,"total_paths":3,"trans_counts":{"1":{"CnC|unassigned":0,"hostD|http(s)":1,"serD|remoteAccess":1,"serD|unassigned":0,"vulnD|storage":1}}},
+			"traces" : [ 615,612,609]
+		},
+		{
+			"id" : 53,
+			"source" :  0,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 1,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"CnC|dataSharing":0,"servS|surveillance":1}}},
+			"traces" : [ 688]
+		},
+		{
+			"id" : 54,
+			"source" :  0,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 1,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"hostD|unassigned":1}}},
+			"traces" : [ 726]
+		},
+		{
+			"id" : 55,
+			"source" :  1,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"serD|remoteAccess":1}}},
+			"traces" : [ 504]
+		},
+		{
+			"id" : 56,
+			"source" :  1,
+			"label" : " 3 0",
+			"size" : 3,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":3},"total_final":0,"total_paths":3,"trans_counts":{"1":{"serD|remoteAccess":1,"serD|unassigned":1,"vulnD|storage":1}}},
+			"traces" : [ 460,135,0]
+		},
+		{
+			"id" : 57,
+			"source" :  1,
+			"label" : " 3 1",
+			"size" : 4,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":3},"total_final":1,"total_paths":3,"trans_counts":{"1":{"hostD|http(s)":1,"vulnD|storage":2}}},
+			"traces" : [ 694,505,143,364]
+		},
+		{
+			"id" : 58,
+			"source" :  1,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"serD|ATCcomm":1,"serD|unassigned":0,"vulnD|storage":1}}},
+			"traces" : [ 662,411]
+		},
+		{
+			"id" : 59,
+			"source" :  1,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"hostD|http(s)":1,"serD|unassigned":1}}},
+			"traces" : [ 75,27]
+		},
+		{
+			"id" : 60,
+			"source" :  1,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"serD|unassigned":1}}},
+			"traces" : [ 6]
+		},
+		{
+			"id" : 61,
+			"source" :  1,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"hostD|http(s)":1,"serD|unassigned":1}}},
+			"traces" : [ 465,374]
+		},
+		{
+			"id" : 62,
+			"source" :  1,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"acctManip|broadcast":1}}},
+			"traces" : [ 294]
+		},
+		{
+			"id" : 63,
+			"source" :  2,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 7,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"hostD|http(s)":1,"serD|remoteAccess":1}}},
+			"traces" : [ 588,584]
+		},
+		{
+			"id" : 64,
+			"source" :  2,
+			"label" : " 1 3",
+			"size" : 4,
+			"level" : 7,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":3},"path_counts":{"0":1},"total_final":3,"total_paths":1,"trans_counts":{"1":{"vulnD|remoteAccess":1}}},
+			"traces" : [ 156,441,663,446]
+		},
+		{
+			"id" : 65,
+			"source" :  2,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 7,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"vulnD|storage":1}}},
+			"traces" : [ 45]
+		},
+		{
+			"id" : 66,
+			"source" :  2,
+			"label" : " 0 1",
+			"size" : 1,
+			"level" : 7,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":0},"total_final":1,"total_paths":0,"trans_counts":{"1":{"hostD|http(s)":0}}},
+			"traces" : [ 583]
+		},
+		{
+			"id" : 67,
+			"source" :  2,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 7,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"serD|unassigned":1,"vulnD|storage":1}}},
+			"traces" : [ 350,109]
+		},
+		{
+			"id" : 68,
+			"source" :  3,
+			"label" : " 0 2",
+			"size" : 2,
+			"level" : 11,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":2},"total_final":2,"total_paths":0},
+			"traces" : [ 366,56]
+		},
+		{
+			"id" : 70,
+			"source" :  3,
+			"label" : " 0 1",
+			"size" : 1,
+			"level" : 11,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":0},"total_final":1,"total_paths":0,"trans_counts":{"1":{"vulnD|storage":0}}},
+			"traces" : [ 745]
+		},
+		{
+			"id" : 71,
+			"source" :  3,
+			"label" : " 0 3",
+			"size" : 3,
+			"level" : 11,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":3},"total_final":3,"total_paths":0},
+			"traces" : [ 13,119,746]
+		},
+		{
+			"id" : 73,
+			"source" :  3,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 11,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"hostD|http(s)":2,"vulnD|remoteAccess":0,"vulnD|storage":0}}},
+			"traces" : [ 472,613]
+		},
+		{
+			"id" : 75,
+			"source" :  3,
+			"label" : " 1 1",
+			"size" : 2,
+			"level" : 11,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":1},"total_final":1,"total_paths":1,"trans_counts":{"1":{"surf|http(s)":1}}},
+			"traces" : [ 93,501]
+		},
+		{
+			"id" : 76,
+			"source" :  3,
+			"label" : " 0 3",
+			"size" : 3,
+			"level" : 11,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":3},"total_final":3,"total_paths":0},
+			"traces" : [ 391,80,549]
+		},
+		{
+			"id" : 77,
+			"source" :  3,
+			"label" : " 2 2",
+			"size" : 4,
+			"level" : 11,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":2},"path_counts":{"0":2},"total_final":2,"total_paths":2,"trans_counts":{"1":{"serD|broadcast":1,"serD|unassigned":1}}},
+			"traces" : [ 671,552,99,669]
+		},
+		{
+			"id" : 78,
+			"source" :  3,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 11,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"vulnD|storage":1}}},
+			"traces" : [ 139]
+		},
+		{
+			"id" : 79,
+			"source" :  3,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 11,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"CnC|unassigned":1}}},
+			"traces" : [ 733]
+		},
+		{
+			"id" : 80,
+			"source" :  4,
+			"label" : " 1 1",
+			"size" : 2,
+			"level" : 15,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":1},"total_final":1,"total_paths":1,"trans_counts":{"1":{"vulnD|storage":1}}},
+			"traces" : [ 361,124]
+		},
+		{
+			"id" : 81,
+			"source" :  4,
+			"label" : " 0 2",
+			"size" : 2,
+			"level" : 15,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":2},"path_counts":{"0":0},"total_final":2,"total_paths":0,"trans_counts":{"1":{"vulnD|storage":0}}},
+			"traces" : [ 92,90]
+		},
+		{
+			"id" : 82,
+			"source" :  4,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 15,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"serD|unassigned":1,"surf|storage":1}}},
+			"traces" : [ 342,21]
+		},
+		{
+			"id" : 83,
+			"source" :  4,
+			"label" : " 0 3",
+			"size" : 3,
+			"level" : 15,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":3},"total_final":3,"total_paths":0},
+			"traces" : [ 41,601,338]
+		},
+		{
+			"id" : 84,
+			"source" :  4,
+			"label" : " 0 2",
+			"size" : 2,
+			"level" : 15,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":2},"total_final":2,"total_paths":0},
+			"traces" : [ 562,530]
+		},
+		{
+			"id" : 86,
+			"source" :  4,
+			"label" : " 0 1",
+			"size" : 1,
+			"level" : 15,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":0},"total_final":1,"total_paths":0,"trans_counts":{"1":{"serD|unassigned":0}}},
+			"traces" : [ 540]
+		},
+		{
+			"id" : 87,
+			"source" :  4,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 15,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"serD|unassigned":1}}},
+			"traces" : [ 626]
+		},
+		{
+			"id" : 88,
+			"source" :  5,
+			"label" : " 0 1",
+			"size" : 1,
+			"level" : 5,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":1},"total_final":1,"total_paths":0},
+			"traces" : [ 518]
+		},
+		{
+			"id" : 89,
+			"source" :  5,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 5,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"serD|remoteAccess":1}}},
+			"traces" : [ 738]
+		},
+		{
+			"id" : 90,
+			"source" :  5,
+			"label" : " 1 2",
+			"size" : 3,
+			"level" : 5,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":2},"path_counts":{"0":1},"total_final":2,"total_paths":1,"trans_counts":{"1":{"serD|remoteAccess":1}}},
+			"traces" : [ 85,95,91]
+		},
+		{
+			"id" : 91,
+			"source" :  5,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 5,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"serD|ATCcomm":1,"vulnD|storage":1}}},
+			"traces" : [ 712,362]
+		},
+		{
+			"id" : 92,
+			"source" :  5,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 5,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"vulnD|storage":1}}},
+			"traces" : [ 353]
+		},
+		{
+			"id" : 93,
+			"source" :  5,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 5,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"serD|unassigned":1,"vulnD|storage":1}}},
+			"traces" : [ 546,328]
+		},
+		{
+			"id" : 96,
+			"source" :  7,
+			"label" : " 3 1",
+			"size" : 4,
+			"level" : 4,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":3},"total_final":1,"total_paths":3,"trans_counts":{"1":{"hostD|storage":1,"vulnD|storage":2}}},
+			"traces" : [ 126,693,336,117]
+		},
+		{
+			"id" : 97,
+			"source" :  7,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 4,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"serD|ATCcomm":1}}},
+			"traces" : [ 29]
+		},
+		{
+			"id" : 98,
+			"source" :  7,
+			"label" : " 4 0",
+			"size" : 4,
+			"level" : 4,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":4},"total_final":0,"total_paths":4,"trans_counts":{"1":{"serD|ATCcomm":1,"serD|remoteAccess":1,"serD|unassigned":2}}},
+			"traces" : [ 535,355,38,147]
+		},
+		{
+			"id" : 99,
+			"source" :  7,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 4,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"hostD|http(s)":1,"serD|remoteAccess":1}}},
+			"traces" : [ 120,4]
+		},
+		{
+			"id" : 100,
+			"source" :  7,
+			"label" : " 1 2",
+			"size" : 3,
+			"level" : 4,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":2},"path_counts":{"0":1},"total_final":2,"total_paths":1,"trans_counts":{"1":{"hostD|storage":0,"serD|remoteAccess":0,"serD|unassigned":0,"surf|storage":0,"vulnD|storage":1}}},
+			"traces" : [ 680,586,406]
+		},
+		{
+			"id" : 101,
+			"source" :  7,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 4,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"vulnD|storage":1}}},
+			"traces" : [ 599]
+		},
+		{
+			"id" : 102,
+			"source" :  7,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 4,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"vulnD|storage":1}}},
+			"traces" : [ 107]
+		},
+		{
+			"id" : 106,
+			"source" :  9,
+			"label" : " 4 0",
+			"size" : 4,
+			"level" : 2,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":4},"total_final":0,"total_paths":4,"trans_counts":{"1":{"hostD|unassigned":1,"serD|unassigned":2,"surf|http(s)":1}}},
+			"traces" : [ 603,591,575,154]
+		},
+		{
+			"id" : 107,
+			"source" :  10,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 2,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"surf|http(s)":2}}},
+			"traces" : [ 675,428]
+		},
+		{
+			"id" : 108,
+			"source" :  10,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 2,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"hostD|http(s)":1}}},
+			"traces" : [ 715]
+		},
+		{
+			"id" : 109,
+			"source" :  10,
+			"label" : " 3 0",
+			"size" : 3,
+			"level" : 2,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":3},"total_final":0,"total_paths":3,"trans_counts":{"1":{"serD|remoteAccess":2,"serD|unassigned":1}}},
+			"traces" : [ 639,451,433]
+		},
+		{
+			"id" : 110,
+			"source" :  10,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 2,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"delivery|http(s)":1}}},
+			"traces" : [ 166]
+		},
+		{
+			"id" : 111,
+			"source" :  10,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 2,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"hostD|http(s)":1}}},
+			"traces" : [ 690]
+		},
+		{
+			"id" : 112,
+			"source" :  10,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 2,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"exfil|http(s)":1,"surf|http(s)":1}}},
+			"traces" : [ 243,173]
+		},
+		{
+			"id" : 113,
+			"source" :  10,
+			"label" : " 4 0",
+			"size" : 4,
+			"level" : 2,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":4},"total_final":0,"total_paths":4,"trans_counts":{"1":{"hostD|http(s)":3,"serD|remoteAccess":1}}},
+			"traces" : [ 678,645,447,431]
+		},
+		{
+			"id" : 115,
+			"source" :  10,
+			"label" : " 3 0",
+			"size" : 3,
+			"level" : 2,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":3},"total_final":0,"total_paths":3,"trans_counts":{"1":{"hostD|http(s)":1,"infoD|http(s)":2}}},
+			"traces" : [ 721,652,651]
+		},
+		{
+			"id" : 125,
+			"source" :  15,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 2,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"hostD|http(s)":1,"serD|remoteAccess":0}}},
+			"traces" : [ 19]
+		},
+		{
+			"id" : 126,
+			"source" :  15,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 2,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"acctManip|broadcast":1,"infoD|remoteAccess":1}}},
+			"traces" : [ 231,164]
+		},
+		{
+			"id" : 127,
+			"source" :  15,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 2,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"serD|remoteAccess":1}}},
+			"traces" : [ 315]
+		},
+		{
+			"id" : 128,
+			"source" :  16,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 2,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"vulnD|storage":1}}},
+			"traces" : [ 743]
+		},
+		{
+			"id" : 130,
+			"source" :  16,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 2,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"bfCred|surveillance":1}}},
+			"traces" : [ 246]
+		},
+		{
+			"id" : 133,
+			"source" :  18,
+			"label" : " 2 1",
+			"size" : 3,
+			"level" : 4,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":2},"total_final":1,"total_paths":2,"trans_counts":{"1":{"hostD|remoteAccess":1,"serD|unassigned":1}}},
+			"traces" : [ 94,520,463]
+		},
+		{
+			"id" : 134,
+			"source" :  18,
+			"label" : " 0 1",
+			"size" : 1,
+			"level" : 4,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":1},"total_final":1,"total_paths":0},
+			"traces" : [ 187]
+		},
+		{
+			"id" : 135,
+			"source" :  18,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 4,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"serD|remoteAccess":1}}},
+			"traces" : [ 228]
+		},
+		{
+			"id" : 136,
+			"source" :  18,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 4,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"serD|dataSharing":1,"serD|unassigned":1}}},
+			"traces" : [ 459,40]
+		},
+		{
+			"id" : 137,
+			"source" :  18,
+			"label" : " 0 1",
+			"size" : 1,
+			"level" : 4,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":1},"total_final":1,"total_paths":0},
+			"traces" : [ 528]
+		},
+		{
+			"id" : 138,
+			"source" :  18,
+			"label" : " 2 1",
+			"size" : 3,
+			"level" : 4,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":2},"total_final":1,"total_paths":2,"trans_counts":{"1":{"netDOS|remoteAccess":2}}},
+			"traces" : [ 730,466,728]
+		},
+		{
+			"id" : 139,
+			"source" :  18,
+			"label" : " 3 0",
+			"size" : 3,
+			"level" : 4,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":3},"total_final":0,"total_paths":3,"trans_counts":{"1":{"CnC|unassigned":2,"vulnD|storage":1}}},
+			"traces" : [ 219,224,184]
+		},
+		{
+			"id" : 140,
+			"source" :  18,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 4,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"acctManip|broadcast":1,"serD|dataSharing":1}}},
+			"traces" : [ 212,223]
+		},
+		{
+			"id" : 141,
+			"source" :  18,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 4,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"remoteexp|broadcast":1}}},
+			"traces" : [ 203]
+		},
+		{
+			"id" : 142,
+			"source" :  19,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"vulnD|storage":1}}},
+			"traces" : [ 346]
+		},
+		{
+			"id" : 143,
+			"source" :  19,
+			"label" : " 1 2",
+			"size" : 3,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":2},"path_counts":{"0":1},"total_final":2,"total_paths":1,"trans_counts":{"1":{"vulnD|storage":1}}},
+			"traces" : [ 570,732,373]
+		},
+		{
+			"id" : 144,
+			"source" :  19,
+			"label" : " 1 1",
+			"size" : 2,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":1},"total_final":1,"total_paths":1,"trans_counts":{"1":{"vulnD|storage":1}}},
+			"traces" : [ 555,749]
+		},
+		{
+			"id" : 145,
+			"source" :  19,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"serD|unassigned":1,"vulnD|storage":1}}},
+			"traces" : [ 69,697]
+		},
+		{
+			"id" : 146,
+			"source" :  19,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"vulnD|storage":1}}},
+			"traces" : [ 115]
+		},
+		{
+			"id" : 147,
+			"source" :  19,
+			"label" : " 0 1",
+			"size" : 1,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":1},"total_final":1,"total_paths":0},
+			"traces" : [ 517]
+		},
+		{
+			"id" : 148,
+			"source" :  19,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"ACE|dataSharing":0,"CnC|remoteAccess":0,"CnC|unassigned":1,"surf|http(s)":0,"vulnD|storage":1}}},
+			"traces" : [ 686,188]
+		},
+		{
+			"id" : 149,
+			"source" :  19,
+			"label" : " 0 2",
+			"size" : 2,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":2},"total_final":2,"total_paths":0},
+			"traces" : [ 665,370]
+		},
+		{
+			"id" : 150,
+			"source" :  19,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"rPrivEsc|remoteAccess":1}}},
+			"traces" : [ 186]
+		},
+		{
+			"id" : 151,
+			"source" :  19,
+			"label" : " 3 0",
+			"size" : 3,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":3},"total_final":0,"total_paths":3,"trans_counts":{"1":{"CnC|unassigned":2,"serD|unassigned":1}}},
+			"traces" : [ 621,620,622]
+		},
+		{
+			"id" : 157,
+			"source" :  22,
+			"label" : " 3 0",
+			"size" : 3,
+			"level" : 2,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":3},"total_final":0,"total_paths":3,"trans_counts":{"1":{"hostD|http(s)":1,"serD|unassigned":1,"vulnD|storage":1}}},
+			"traces" : [ 578,468,369]
+		},
+		{
+			"id" : 158,
+			"source" :  22,
+			"label" : " 4 0",
+			"size" : 4,
+			"level" : 2,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":4},"total_final":0,"total_paths":4,"trans_counts":{"1":{"hostD|http(s)":1,"hostD|remoteAccess":1,"vulnD|http(s)":1,"vulnD|storage":1}}},
+			"traces" : [ 140,127,125,52]
+		},
+		{
+			"id" : 159,
+			"source" :  22,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 2,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"vulnD|storage":1}}},
+			"traces" : [ 604]
+		},
+		{
+			"id" : 160,
+			"source" :  23,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"serD|unassigned":1,"vulnD|storage":1}}},
+			"traces" : [ 512,83]
+		},
+		{
+			"id" : 161,
+			"source" :  23,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"vulnD|storage":1}}},
+			"traces" : [ 96]
+		},
+		{
+			"id" : 162,
+			"source" :  23,
+			"label" : " 3 0",
+			"size" : 3,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":3},"total_final":0,"total_paths":3,"trans_counts":{"1":{"serD|dataSharing":2,"vulnD|storage":1}}},
+			"traces" : [ 87,84,82]
+		},
+		{
+			"id" : 163,
+			"source" :  23,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"serD|unassigned":1}}},
+			"traces" : [ 510]
+		},
+		{
+			"id" : 164,
+			"source" :  24,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 2,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"hostD|remoteAccess":1}}},
+			"traces" : [ 731]
+		},
+		{
+			"id" : 165,
+			"source" :  24,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 2,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"vulnD|storage":1}}},
+			"traces" : [ 43]
+		},
+		{
+			"id" : 166,
+			"source" :  24,
+			"label" : " 4 0",
+			"size" : 4,
+			"level" : 2,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":4},"total_final":0,"total_paths":4,"trans_counts":{"1":{"bfCred|email":1,"serD|unassigned":3}}},
+			"traces" : [ 158,132,131,138]
+		},
+		{
+			"id" : 168,
+			"source" :  24,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 2,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"ACE|dataSharing":1}}},
+			"traces" : [ 189]
+		},
+		{
+			"id" : 172,
+			"source" :  28,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"surf|unassigned":1}}},
+			"traces" : [ 416]
+		},
+		{
+			"id" : 173,
+			"source" :  28,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"uPrivEsc|http(s)":1}}},
+			"traces" : [ 401]
+		},
+		{
+			"id" : 175,
+			"source" :  28,
+			"label" : " 3 0",
+			"size" : 3,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":3},"total_final":0,"total_paths":3,"trans_counts":{"1":{"ACE|broadcast":1,"bfCred|unassigned":1,"surf|unassigned":1}}},
+			"traces" : [ 272,182,181]
+		},
+		{
+			"id" : 176,
+			"source" :  28,
+			"label" : " 3 0",
+			"size" : 3,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":3},"total_final":0,"total_paths":3,"trans_counts":{"1":{"infoD|remoteAccess":1,"infoD|unassigned":1,"uPrivEsc|unassigned":1}}},
+			"traces" : [ 323,321,320]
+		},
+		{
+			"id" : 177,
+			"source" :  28,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"ACE|broadcast":1}}},
+			"traces" : [ 322]
+		},
+		{
+			"id" : 178,
+			"source" :  28,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"infoD|unassigned":1}}},
+			"traces" : [ 405]
+		},
+		{
+			"id" : 184,
+			"source" :  32,
+			"label" : " 1 1",
+			"size" : 2,
+			"level" : 4,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":1},"total_final":1,"total_paths":1,"trans_counts":{"1":{"ACE|broadcast":1,"infoD|remoteAccess":0,"uPrivEsc|http(s)":0}}},
+			"traces" : [ 241,296]
+		},
+		{
+			"id" : 185,
+			"source" :  32,
+			"label" : " 3 0",
+			"size" : 3,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":3},"total_final":0,"total_paths":3,"trans_counts":{"1":{"hostD|remoteAccess":0,"serD|dataSharing":0,"serD|remoteAccess":0,"serD|unassigned":1,"vulnD|storage":2}}},
+			"traces" : [ 709,171,167]
+		},
+		{
+			"id" : 186,
+			"source" :  32,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"vulnD|storage":2}}},
+			"traces" : [ 450,413]
+		},
+		{
+			"id" : 187,
+			"source" :  32,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"rPrivEsc|remoteAccess":1}}},
+			"traces" : [ 208]
+		},
+		{
+			"id" : 188,
+			"source" :  32,
+			"label" : " 0 1",
+			"size" : 1,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":1},"total_final":1,"total_paths":0},
+			"traces" : [ 292]
+		},
+		{
+			"id" : 189,
+			"source" :  32,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"vulnD|storage":1}}},
+			"traces" : [ 711]
+		},
+		{
+			"id" : 190,
+			"source" :  32,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"vulnD|remoteAccess":1}}},
+			"traces" : [ 198]
+		},
+		{
+			"id" : 191,
+			"source" :  32,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"remoteexp|broadcast":1}}},
+			"traces" : [ 268]
+		},
+		{
+			"id" : 192,
+			"source" :  33,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 5,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"vulnD|storage":2}}},
+			"traces" : [ 163,314]
+		},
+		{
+			"id" : 193,
+			"source" :  33,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 5,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"hostD|remoteAccess":1,"vulnD|http(s)":1}}},
+			"traces" : [ 325,174]
+		},
+		{
+			"id" : 194,
+			"source" :  33,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 5,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"infoD|remoteAccess":1,"vulnD|storage":1}}},
+			"traces" : [ 282,318]
+		},
+		{
+			"id" : 195,
+			"source" :  33,
+			"label" : " 2 1",
+			"size" : 3,
+			"level" : 5,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":2},"total_final":1,"total_paths":2,"trans_counts":{"1":{"bfCred|unassigned":1,"vulnD|http(s)":1}}},
+			"traces" : [ 165,274,240]
+		},
+		{
+			"id" : 197,
+			"source" :  34,
+			"label" : " 3 0",
+			"size" : 3,
+			"level" : 4,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":3},"total_final":0,"total_paths":3,"trans_counts":{"1":{"hostD|http(s)":1,"serD|remoteAccess":2}}},
+			"traces" : [ 381,380,379]
+		},
+		{
+			"id" : 198,
+			"source" :  34,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 4,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"serD|remoteAccess":1,"vulnD|remoteAccess":0}}},
+			"traces" : [ 383]
+		},
+		{
+			"id" : 199,
+			"source" :  34,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 4,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"hostD|storage":1}}},
+			"traces" : [ 382]
+		},
+		{
+			"id" : 200,
+			"source" :  34,
+			"label" : " 1 2",
+			"size" : 3,
+			"level" : 4,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":2},"path_counts":{"0":1},"total_final":2,"total_paths":1,"trans_counts":{"1":{"serD|remoteAccess":1}}},
+			"traces" : [ 261,249,252]
+		},
+		{
+			"id" : 201,
+			"source" :  34,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 4,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"serD|unassigned":1,"vulnD|storage":0}}},
+			"traces" : [ 169]
+		},
+		{
+			"id" : 202,
+			"source" :  34,
+			"label" : " 0 1",
+			"size" : 1,
+			"level" : 4,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":1},"total_final":1,"total_paths":0},
+			"traces" : [ 311]
+		},
+		{
+			"id" : 203,
+			"source" :  35,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 2,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"vulnD|storage":1}}},
+			"traces" : [ 264]
+		},
+		{
+			"id" : 204,
+			"source" :  35,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 2,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"serD|unassigned":1}}},
+			"traces" : [ 199]
+		},
+		{
+			"id" : 205,
+			"source" :  35,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 2,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"acctManip|broadcast":1}}},
+			"traces" : [ 242]
+		},
+		{
+			"id" : 206,
+			"source" :  36,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 2,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"ACE|dataSharing":1,"CnC|unassigned":1}}},
+			"traces" : [ 229,204]
+		},
+		{
+			"id" : 208,
+			"source" :  38,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 2,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"remoteexp|broadcast":1}}},
+			"traces" : [ 190]
+		},
+		{
+			"id" : 209,
+			"source" :  38,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 2,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"hostD|remoteAccess":1,"infoD|remoteAccess":0}}},
+			"traces" : [ 195]
+		},
+		{
+			"id" : 254,
+			"source" :  69,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 14,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"serD|remoteAccess":1,"vulnD|storage":1}}},
+			"traces" : [ 594,592]
+		},
+		{
+			"id" : 255,
+			"source" :  69,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 14,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"serD|unassigned":1}}},
+			"traces" : [ 479]
+		},
+		{
+			"id" : 256,
+			"source" :  69,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 14,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"vulnD|storage":1}}},
+			"traces" : [ 543]
+		},
+		{
+			"id" : 257,
+			"source" :  69,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 14,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"serD|remoteAccess":1}}},
+			"traces" : [ 403]
+		},
+		{
+			"id" : 258,
+			"source" :  72,
+			"label" : " 4 0",
+			"size" : 4,
+			"level" : 14,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":4},"total_final":0,"total_paths":4,"trans_counts":{"1":{"serD|remoteAccess":1,"serD|storage":1,"serD|unassigned":2}}},
+			"traces" : [ 627,617,359,630]
+		},
+		{
+			"id" : 259,
+			"source" :  72,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 14,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"serD|unassigned":0,"vulnD|storage":1}}},
+			"traces" : [ 699]
+		},
+		{
+			"id" : 260,
+			"source" :  72,
+			"label" : " 2 2",
+			"size" : 4,
+			"level" : 14,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":2},"path_counts":{"0":2},"total_final":2,"total_paths":2,"trans_counts":{"1":{"serD|unassigned":2}}},
+			"traces" : [ 668,633,660,616]
+		},
+		{
+			"id" : 261,
+			"source" :  72,
+			"label" : " 1 1",
+			"size" : 2,
+			"level" : 14,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":1},"total_final":1,"total_paths":1,"trans_counts":{"1":{"hostD|http(s)":0,"serD|unassigned":0,"vulnD|storage":1}}},
+			"traces" : [ 679,685]
+		},
+		{
+			"id" : 262,
+			"source" :  72,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 14,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"serD|unassigned":1,"vulnD|storage":0}}},
+			"traces" : [ 611]
+		},
+		{
+			"id" : 264,
+			"source" :  74,
+			"label" : " 0 3",
+			"size" : 3,
+			"level" : 13,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":3},"total_final":3,"total_paths":0},
+			"traces" : [ 742,527,36]
+		},
+		{
+			"id" : 273,
+			"source" :  85,
+			"label" : " 0 1",
+			"size" : 1,
+			"level" : 16,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":0},"total_final":1,"total_paths":0,"trans_counts":{"1":{"serD|dataSharing":0,"vulnD|storage":0}}},
+			"traces" : [ 607]
+		},
+		{
+			"id" : 274,
+			"source" :  85,
+			"label" : " 1 1",
+			"size" : 2,
+			"level" : 16,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":1},"total_final":1,"total_paths":1,"trans_counts":{"1":{"serD|remoteAccess":0,"serD|unassigned":0,"vulnD|storage":1}}},
+			"traces" : [ 564,531]
+		},
+		{
+			"id" : 275,
+			"source" :  85,
+			"label" : " 0 2",
+			"size" : 2,
+			"level" : 16,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":2},"total_final":2,"total_paths":0},
+			"traces" : [ 111,196]
+		},
+		{
+			"id" : 276,
+			"source" :  85,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 16,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"serD|unassigned":1,"vulnD|storage":1}}},
+			"traces" : [ 469,345]
+		},
+		{
+			"id" : 315,
+			"source" :  114,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"infoD|http(s)":1}}},
+			"traces" : [ 426]
+		},
+		{
+			"id" : 326,
+			"source" :  124,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"CnC|unassigned":1}}},
+			"traces" : [ 210]
+		},
+		{
+			"id" : 327,
+			"source" :  124,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"rPrivEsc|remoteAccess":1}}},
+			"traces" : [ 207]
+		},
+		{
+			"id" : 328,
+			"source" :  124,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"privEsc|http(s)":1}}},
+			"traces" : [ 141]
+		},
+		{
+			"id" : 329,
+			"source" :  124,
+			"label" : " 3 0",
+			"size" : 3,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":3},"total_final":0,"total_paths":3,"trans_counts":{"1":{"ACE|http(s)":0,"CnC|http(s)":1,"PAexp|http(s)":2,"infoD|nameserver":0}}},
+			"traces" : [ 689,515,506]
+		},
+		{
+			"id" : 330,
+			"source" :  124,
+			"label" : " 4 0",
+			"size" : 4,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":4},"total_final":0,"total_paths":4,"trans_counts":{"1":{"ACE|broadcast":0,"infoD|http(s)":0,"surf|http(s)":3,"vulnD|http(s)":1}}},
+			"traces" : [ 256,255,178,176]
+		},
+		{
+			"id" : 331,
+			"source" :  124,
+			"label" : " 4 0",
+			"size" : 4,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":4},"total_final":0,"total_paths":4,"trans_counts":{"1":{"ACE|broadcast":1,"bfCred|unassigned":1,"infoD|http(s)":1,"surf|http(s)":1}}},
+			"traces" : [ 286,280,273,251]
+		},
+		{
+			"id" : 332,
+			"source" :  124,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"acctManip|broadcast":1,"infoD|remoteAccess":1}}},
+			"traces" : [ 237,168]
+		},
+		{
+			"id" : 333,
+			"source" :  124,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"ACE|broadcast":1}}},
+			"traces" : [ 287]
+		},
+		{
+			"id" : 389,
+			"source" :  167,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 4,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"vulnD|storage":1}}},
+			"traces" : [ 201]
+		},
+		{
+			"id" : 390,
+			"source" :  167,
+			"label" : " 3 0",
+			"size" : 3,
+			"level" : 4,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":3},"total_final":0,"total_paths":3,"trans_counts":{"1":{"serD|dataSharing":1,"serD|unassigned":1,"vulnD|storage":1}}},
+			"traces" : [ 193,222,216]
+		},
+		{
+			"id" : 391,
+			"source" :  167,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 4,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"vulnD|storage":1}}},
+			"traces" : [ 81]
+		},
+		{
+			"id" : 392,
+			"source" :  167,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 4,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"vulnD|storage":1}}},
+			"traces" : [ 214]
+		},
+		{
+			"id" : 393,
+			"source" :  167,
+			"label" : " 1 1",
+			"size" : 2,
+			"level" : 4,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":1},"total_final":1,"total_paths":1,"trans_counts":{"1":{"vulnD|remoteAccess":1}}},
+			"traces" : [ 666,225]
+		},
+		{
+			"id" : 394,
+			"source" :  167,
+			"label" : " 0 1",
+			"size" : 1,
+			"level" : 4,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":1},"total_final":1,"total_paths":0},
+			"traces" : [ 86]
+		},
+		{
+			"id" : 395,
+			"source" :  167,
+			"label" : " 0 1",
+			"size" : 1,
+			"level" : 4,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":1},"total_final":1,"total_paths":0},
+			"traces" : [ 644]
+		},
+		{
+			"id" : 396,
+			"source" :  167,
+			"label" : " 4 0",
+			"size" : 4,
+			"level" : 4,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":4},"total_final":0,"total_paths":4,"trans_counts":{"1":{"CnC|unassigned":1,"vulnD|storage":3}}},
+			"traces" : [ 192,183,218,211]
+		},
+		{
+			"id" : 403,
+			"source" :  174,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 4,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"hostD|unassigned":1}}},
+			"traces" : [ 432]
+		},
+		{
+			"id" : 435,
+			"source" :  196,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 8,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"infoD|remoteAccess":1}}},
+			"traces" : [ 217]
+		},
+		{
+			"id" : 436,
+			"source" :  196,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 8,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"infoD|remoteAccess":2}}},
+			"traces" : [ 271,250]
+		},
+		{
+			"id" : 438,
+			"source" :  196,
+			"label" : " 2 1",
+			"size" : 3,
+			"level" : 8,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":2},"total_final":1,"total_paths":2,"trans_counts":{"1":{"serD|remoteAccess":1,"vulnD|storage":1}}},
+			"traces" : [ 172,285,177]
+		},
+		{
+			"id" : 453,
+			"source" :  210,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 3,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"acctManip|broadcast":0,"infoD|unassigned":1}}},
+			"traces" : [ 213]
+		},
+		{
+			"id" : 541,
+			"source" :  314,
+			"label" : " 3 0",
+			"size" : 3,
+			"level" : 6,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":3},"total_final":0,"total_paths":3,"trans_counts":{"1":{"hostD|http(s)":1,"surf|http(s)":2}}},
+			"traces" : [ 676,482,418]
+		},
+		{
+			"id" : 543,
+			"source" :  314,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 6,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"hostD|http(s)":1}}},
+			"traces" : [ 420]
+		},
+		{
+			"id" : 544,
+			"source" :  314,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 6,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"hostD|http(s)":1}}},
+			"traces" : [ 661]
+		},
+		{
+			"id" : 573,
+			"source" :  339,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 4,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"surf|storage":1}}},
+			"traces" : [ 657]
+		},
+		{
+			"id" : 622,
+			"source" :  404,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 5,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"serD|remoteAccess":1,"surf|unassigned":1}}},
+			"traces" : [ 590,422]
+		},
+		{
+			"id" : 623,
+			"source" :  404,
+			"label" : " 4 0",
+			"size" : 4,
+			"level" : 5,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":4},"total_final":0,"total_paths":4,"trans_counts":{"1":{"surf|unassigned":4}}},
+			"traces" : [ 487,424,409,227]
+		},
+		{
+			"id" : 624,
+			"source" :  404,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 5,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"hostD|unassigned":1,"vulnD|storage":1}}},
+			"traces" : [ 589,423]
+		},
+		{
+			"id" : 647,
+			"source" :  437,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 9,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"infoD|dataSharing":1,"infoD|remoteAccess":1,"uPrivEsc|http(s)":0}}},
+			"traces" : [ 278,206]
+		},
+		{
+			"id" : 648,
+			"source" :  437,
+			"label" : " 0 1",
+			"size" : 1,
+			"level" : 9,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":1},"total_final":1,"total_paths":0},
+			"traces" : [ 185]
+		},
+		{
+			"id" : 649,
+			"source" :  437,
+			"label" : " 0 1",
+			"size" : 1,
+			"level" : 9,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":0},"total_final":1,"total_paths":0,"trans_counts":{"1":{"hostD|remoteAccess":0,"serD|dataSharing":0,"serD|remoteAccess":0}}},
+			"traces" : [ 279]
+		},
+		{
+			"id" : 650,
+			"source" :  437,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 9,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"infoD|remoteAccess":1,"vulnD|storage":0}}},
+			"traces" : [ 266]
+		},
+		{
+			"id" : 733,
+			"source" :  542,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 7,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"hostD|http(s)":2,"hostD|remoteAccess":0,"hostD|storage":0,"hostD|unassigned":0,"serD|remoteAccess":0,"serD|storage":0,"serD|unassigned":0,"surf|http(s)":0,"vulnD|remoteAccess":0,"vulnD|storage":0}}},
+			"traces" : [ 153,440]
+		},
+		{
+			"id" : 734,
+			"source" :  542,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 7,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"hostD|http(s)":1,"hostD|unassigned":0,"infoD|remoteAccess":0,"vulnD|storage":0}}},
+			"traces" : [ 12]
+		},
+		{
+			"id" : 735,
+			"source" :  542,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 7,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"surf|http(s)":1,"surf|storage":0}}},
+			"traces" : [ 425]
+		},
+		{
+			"id" : 736,
+			"source" :  542,
+			"label" : " 1 1",
+			"size" : 2,
+			"level" : 7,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":1},"total_final":1,"total_paths":1,"trans_counts":{"1":{"hostD|http(s)":1,"vulnD|storage":0}}},
+			"traces" : [ 452,151]
+		},
+		{
+			"id" : 737,
+			"source" :  542,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 7,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"hostD|http(s)":1}}},
+			"traces" : [ 419]
+		},
+		{
+			"id" : 740,
+			"source" :  545,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 8,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"hostD|http(s)":1,"serD|unassigned":0}}},
+			"traces" : [ 354]
+		},
+		{
+			"id" : 741,
+			"source" :  545,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 8,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"infoD|dataSharing":1}}},
+			"traces" : [ 142]
+		},
+		{
+			"id" : 742,
+			"source" :  545,
+			"label" : " 2 0",
+			"size" : 2,
+			"level" : 8,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":2},"total_final":0,"total_paths":2,"trans_counts":{"1":{"serD|unassigned":0,"vulnD|storage":2}}},
+			"traces" : [ 133,129]
+		},
+		{
+			"id" : 743,
+			"source" :  545,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 8,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"hostD|http(s)":0,"surf|http(s)":1}}},
+			"traces" : [ 421]
+		},
+		{
+			"id" : 800,
+			"source" :  625,
+			"label" : " 4 0",
+			"size" : 4,
+			"level" : 6,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":4},"total_final":0,"total_paths":4,"trans_counts":{"1":{"surf|unassigned":4}}},
+			"traces" : [ 683,221,202,114]
+		},
+		{
+			"id" : 801,
+			"source" :  625,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 6,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"hostD|unassigned":1}}},
+			"traces" : [ 347]
+		},
+		{
+			"id" : 889,
+			"source" :  744,
+			"label" : " 0 2",
+			"size" : 2,
+			"level" : 13,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":2},"total_final":2,"total_paths":0},
+			"traces" : [ 581,704]
+		},
+		{
+			"id" : 890,
+			"source" :  744,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 13,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"vulnD|storage":1}}},
+			"traces" : [ 638]
+		},
+		{
+			"id" : 891,
+			"source" :  744,
+			"label" : " 4 0",
+			"size" : 4,
+			"level" : 13,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"path_counts":{"0":4},"total_final":0,"total_paths":4,"trans_counts":{"1":{"serD|unassigned":1,"surf|browser":1,"surf|http(s)":1,"vulnD|storage":1}}},
+			"traces" : [ 157,740,481,76]
+		},
+		{
+			"id" : 892,
+			"source" :  744,
+			"label" : " 1 0",
+			"size" : 1,
+			"level" : 13,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":1},"total_final":0,"total_paths":1,"trans_counts":{"1":{"serD|unassigned":1}}},
+			"traces" : [ 714]
+		},
+		{
+			"id" : 893,
+			"source" :  744,
+			"label" : " 0 1",
+			"size" : 1,
+			"level" : 13,
+			"style" : "",
+			"isred" :  0,
+			"issink" :  1,
+			"isblue" :  1,
+			"data" :  {"final_counts":{"0":1},"total_final":1,"total_paths":0},
+			"traces" : [ 708]
+		}
+	],
+	"edges" : [
+		{
+			"id" : "0_1",
+			"source" : "0",
+			"target" : "1",
+			"name": "bfCred|unassigned",
+			"appearances": "25 "}
+,
+		{
+			"id" : "0_2",
+			"source" : "0",
+			"target" : "2",
+			"name": "hostD|http(s)",
+			"appearances": "37 "}
+,
+		{
+			"id" : "0_3",
+			"source" : "0",
+			"target" : "3",
+			"name": "serD|unassigned",
+			"appearances": "74 "}
+,
+		{
+			"id" : "0_69",
+			"source" : "0",
+			"target" : "69",
+			"name": "hostD|remoteAccess",
+			"appearances": "5 "}
+,
+		{
+			"id" : "0_4",
+			"source" : "0",
+			"target" : "4",
+			"name": "vulnD|storage",
+			"appearances": "90 "}
+,
+		{
+			"id" : "0_5",
+			"source" : "0",
+			"target" : "5",
+			"name": "serD|remoteAccess",
+			"appearances": "33 "}
+,
+		{
+			"id" : "0_6",
+			"source" : "0",
+			"target" : "6",
+			"name": "bfCred|remoteAccess",
+			"appearances": "2 "}
+,
+		{
+			"id" : "0_7",
+			"source" : "0",
+			"target" : "7",
+			"name": "hostD|storage",
+			"appearances": "7 "}
+,
+		{
+			"id" : "0_8",
+			"source" : "0",
+			"target" : "8",
+			"name": "uPrivEsc|unassigned",
+			"appearances": "3 "}
+,
+		{
+			"id" : "0_9",
+			"source" : "0",
+			"target" : "9",
+			"name": "hostD|unassigned",
+			"appearances": "4 "}
+,
+		{
+			"id" : "0_10",
+			"source" : "0",
+			"target" : "10",
+			"name": "exfil|http(s)",
+			"appearances": "75 "}
+,
+		{
+			"id" : "0_744",
+			"source" : "0",
+			"target" : "744",
+			"name": "surf|http(s)",
+			"appearances": "9 "}
+,
+		{
+			"id" : "0_11",
+			"source" : "0",
+			"target" : "11",
+			"name": "CnC|http(s)",
+			"appearances": "3 "}
+,
+		{
+			"id" : "0_12",
+			"source" : "0",
+			"target" : "12",
+			"name": "surf|browser",
+			"appearances": "2 "}
+,
+		{
+			"id" : "0_72",
+			"source" : "0",
+			"target" : "72",
+			"name": "vulnD|remoteAccess",
+			"appearances": "10 "}
+,
+		{
+			"id" : "0_13",
+			"source" : "0",
+			"target" : "13",
+			"name": "ACE|email",
+			"appearances": "2 "}
+,
+		{
+			"id" : "0_14",
+			"source" : "0",
+			"target" : "14",
+			"name": "infoD|nameserver",
+			"appearances": "1 "}
+,
+		{
+			"id" : "0_15",
+			"source" : "0",
+			"target" : "15",
+			"name": "delivery|http(s)",
+			"appearances": "32 "}
+,
+		{
+			"id" : "0_16",
+			"source" : "0",
+			"target" : "16",
+			"name": "exfil|storage",
+			"appearances": "9 "}
+,
+		{
+			"id" : "0_17",
+			"source" : "0",
+			"target" : "17",
+			"name": "surf|storage",
+			"appearances": "2 "}
+,
+		{
+			"id" : "0_18",
+			"source" : "0",
+			"target" : "18",
+			"name": "netDOS|remoteAccess",
+			"appearances": "46 "}
+,
+		{
+			"id" : "0_19",
+			"source" : "0",
+			"target" : "19",
+			"name": "CnC|unassigned",
+			"appearances": "34 "}
+,
+		{
+			"id" : "0_20",
+			"source" : "0",
+			"target" : "20",
+			"name": "surf|unassigned",
+			"appearances": "2 "}
+,
+		{
+			"id" : "0_21",
+			"source" : "0",
+			"target" : "21",
+			"name": "serD|ATCcomm",
+			"appearances": "4 "}
+,
+		{
+			"id" : "0_22",
+			"source" : "0",
+			"target" : "22",
+			"name": "bfCred|email",
+			"appearances": "23 "}
+,
+		{
+			"id" : "0_23",
+			"source" : "0",
+			"target" : "23",
+			"name": "serD|dataSharing",
+			"appearances": "7 "}
+,
+		{
+			"id" : "0_24",
+			"source" : "0",
+			"target" : "24",
+			"name": "exfil|dataSharing",
+			"appearances": "30 "}
+,
+		{
+			"id" : "0_25",
+			"source" : "0",
+			"target" : "25",
+			"name": "rPrivEsc|nameserver",
+			"appearances": "1 "}
+,
+		{
+			"id" : "0_26",
+			"source" : "0",
+			"target" : "26",
+			"name": "serD|storage",
+			"appearances": "1 "}
+,
+		{
+			"id" : "0_27",
+			"source" : "0",
+			"target" : "27",
+			"name": "hostD|surveillance",
+			"appearances": "1 "}
+,
+		{
+			"id" : "0_167",
+			"source" : "0",
+			"target" : "167",
+			"name": "ACE|dataSharing",
+			"appearances": "8 "}
+,
+		{
+			"id" : "0_545",
+			"source" : "0",
+			"target" : "545",
+			"name": "vulnD|http(s)",
+			"appearances": "6 "}
+,
+		{
+			"id" : "0_28",
+			"source" : "0",
+			"target" : "28",
+			"name": "exfil|unassigned",
+			"appearances": "17 "}
+,
+		{
+			"id" : "0_29",
+			"source" : "0",
+			"target" : "29",
+			"name": "ACE|http(s)",
+			"appearances": "4 "}
+,
+		{
+			"id" : "0_30",
+			"source" : "0",
+			"target" : "30",
+			"name": "hostD|wireless",
+			"appearances": "4 "}
+,
+		{
+			"id" : "0_31",
+			"source" : "0",
+			"target" : "31",
+			"name": "privEsc|http(s)",
+			"appearances": "1 "}
+,
+		{
+			"id" : "0_32",
+			"source" : "0",
+			"target" : "32",
+			"name": "acctManip|broadcast",
+			"appearances": "30 "}
+,
+		{
+			"id" : "0_33",
+			"source" : "0",
+			"target" : "33",
+			"name": "ACE|broadcast",
+			"appearances": "23 "}
+,
+		{
+			"id" : "0_34",
+			"source" : "0",
+			"target" : "34",
+			"name": "infoD|remoteAccess",
+			"appearances": "11 "}
+,
+		{
+			"id" : "0_196",
+			"source" : "0",
+			"target" : "196",
+			"name": "remoteexp|broadcast",
+			"appearances": "7 "}
+,
+		{
+			"id" : "0_35",
+			"source" : "0",
+			"target" : "35",
+			"name": "netDOS|broadcast",
+			"appearances": "15 "}
+,
+		{
+			"id" : "0_36",
+			"source" : "0",
+			"target" : "36",
+			"name": "delivery|unassigned",
+			"appearances": "9 "}
+,
+		{
+			"id" : "0_37",
+			"source" : "0",
+			"target" : "37",
+			"name": "netDOS|clocksync",
+			"appearances": "1 "}
+,
+		{
+			"id" : "0_38",
+			"source" : "0",
+			"target" : "38",
+			"name": "delivery|remoteAccess",
+			"appearances": "9 "}
+,
+		{
+			"id" : "0_39",
+			"source" : "0",
+			"target" : "39",
+			"name": "surf|remoteAccess",
+			"appearances": "1 "}
+,
+		{
+			"id" : "0_40",
+			"source" : "0",
+			"target" : "40",
+			"name": "ACE|remoteAccess",
+			"appearances": "2 "}
+,
+		{
+			"id" : "0_41",
+			"source" : "0",
+			"target" : "41",
+			"name": "exfil|remoteAccess",
+			"appearances": "3 "}
+,
+		{
+			"id" : "0_42",
+			"source" : "0",
+			"target" : "42",
+			"name": "bfCred|surveillance",
+			"appearances": "1 "}
+,
+		{
+			"id" : "0_43",
+			"source" : "0",
+			"target" : "43",
+			"name": "delivery|storage",
+			"appearances": "2 "}
+,
+		{
+			"id" : "0_44",
+			"source" : "0",
+			"target" : "44",
+			"name": "delivery|surveillance",
+			"appearances": "3 "}
+,
+		{
+			"id" : "0_45",
+			"source" : "0",
+			"target" : "45",
+			"name": "exfil|surveillance",
+			"appearances": "4 "}
+,
+		{
+			"id" : "0_46",
+			"source" : "0",
+			"target" : "46",
+			"name": "delivery|wireless",
+			"appearances": "1 "}
+,
+		{
+			"id" : "0_47",
+			"source" : "0",
+			"target" : "47",
+			"name": "exfil|email",
+			"appearances": "1 "}
+,
+		{
+			"id" : "0_48",
+			"source" : "0",
+			"target" : "48",
+			"name": "dManip|nameserver",
+			"appearances": "3 "}
+,
+		{
+			"id" : "0_49",
+			"source" : "0",
+			"target" : "49",
+			"name": "delivery|browser",
+			"appearances": "2 "}
+,
+		{
+			"id" : "0_50",
+			"source" : "0",
+			"target" : "50",
+			"name": "CnC|storage",
+			"appearances": "2 "}
+,
+		{
+			"id" : "0_51",
+			"source" : "0",
+			"target" : "51",
+			"name": "exfil|wireless",
+			"appearances": "2 "}
+,
+		{
+			"id" : "0_52",
+			"source" : "0",
+			"target" : "52",
+			"name": "rPrivEsc|unassigned",
+			"appearances": "3 "}
+,
+		{
+			"id" : "0_53",
+			"source" : "0",
+			"target" : "53",
+			"name": "servS|surveillance",
+			"appearances": "1 "}
+,
+		{
+			"id" : "0_54",
+			"source" : "0",
+			"target" : "54",
+			"name": "rPrivEsc|surveillance",
+			"appearances": "1 "}
+,
+		{
+			"id" : "1_55",
+			"source" : "1",
+			"target" : "55",
+			"name": "bfCred|unassigned",
+			"appearances": "1 "}
+,
+		{
+			"id" : "1_56",
+			"source" : "1",
+			"target" : "56",
+			"name": "hostD|http(s)",
+			"appearances": "3 "}
+,
+		{
+			"id" : "1_57",
+			"source" : "1",
+			"target" : "57",
+			"name": "serD|unassigned",
+			"appearances": "4 "}
+,
+		{
+			"id" : "1_58",
+			"source" : "1",
+			"target" : "58",
+			"name": "hostD|remoteAccess",
+			"appearances": "2 "}
+,
+		{
+			"id" : "1_4",
+			"source" : "1",
+			"target" : "4",
+			"name": "vulnD|storage",
+			"appearances": "11 "}
+,
+		{
+			"id" : "1_59",
+			"source" : "1",
+			"target" : "59",
+			"name": "serD|remoteAccess",
+			"appearances": "2 "}
+,
+		{
+			"id" : "1_60",
+			"source" : "1",
+			"target" : "60",
+			"name": "uPrivEsc|unassigned",
+			"appearances": "1 "}
+,
+		{
+			"id" : "1_61",
+			"source" : "1",
+			"target" : "61",
+			"name": "serD|dataSharing",
+			"appearances": "2 "}
+,
+		{
+			"id" : "1_62",
+			"source" : "1",
+			"target" : "62",
+			"name": "acctManip|broadcast",
+			"appearances": "1 "}
+,
+		{
+			"id" : "2_63",
+			"source" : "2",
+			"target" : "63",
+			"name": "hostD|http(s)",
+			"appearances": "2 "}
+,
+		{
+			"id" : "2_3",
+			"source" : "2",
+			"target" : "3",
+			"name": "serD|unassigned",
+			"appearances": "9 "}
+,
+		{
+			"id" : "2_4",
+			"source" : "2",
+			"target" : "4",
+			"name": "vulnD|storage",
+			"appearances": "54 "}
+,
+		{
+			"id" : "2_5",
+			"source" : "2",
+			"target" : "5",
+			"name": "serD|remoteAccess",
+			"appearances": "9 "}
+,
+		{
+			"id" : "2_64",
+			"source" : "2",
+			"target" : "64",
+			"name": "surf|http(s)",
+			"appearances": "4 "}
+,
+		{
+			"id" : "2_65",
+			"source" : "2",
+			"target" : "65",
+			"name": "serD|ATCcomm",
+			"appearances": "1 "}
+,
+		{
+			"id" : "2_66",
+			"source" : "2",
+			"target" : "66",
+			"name": "serD|storage",
+			"appearances": "1 "}
+,
+		{
+			"id" : "2_67",
+			"source" : "2",
+			"target" : "67",
+			"name": "vulnD|http(s)",
+			"appearances": "2 "}
+,
+		{
+			"id" : "3_68",
+			"source" : "3",
+			"target" : "68",
+			"name": "bfCred|unassigned",
+			"appearances": "2 "}
+,
+		{
+			"id" : "3_2",
+			"source" : "3",
+			"target" : "2",
+			"name": "hostD|http(s)",
+			"appearances": "34 "}
+,
+		{
+			"id" : "3_3",
+			"source" : "3",
+			"target" : "3",
+			"name": "serD|unassigned",
+			"appearances": "120 "}
+,
+		{
+			"id" : "3_69",
+			"source" : "3",
+			"target" : "69",
+			"name": "hostD|remoteAccess",
+			"appearances": "8 "}
+,
+		{
+			"id" : "3_4",
+			"source" : "3",
+			"target" : "4",
+			"name": "vulnD|storage",
+			"appearances": "164 "}
+,
+		{
+			"id" : "3_5",
+			"source" : "3",
+			"target" : "5",
+			"name": "serD|remoteAccess",
+			"appearances": "15 "}
+,
+		{
+			"id" : "3_7",
+			"source" : "3",
+			"target" : "7",
+			"name": "hostD|storage",
+			"appearances": "6 "}
+,
+		{
+			"id" : "3_70",
+			"source" : "3",
+			"target" : "70",
+			"name": "hostD|unassigned",
+			"appearances": "1 "}
+,
+		{
+			"id" : "3_71",
+			"source" : "3",
+			"target" : "71",
+			"name": "surf|http(s)",
+			"appearances": "3 "}
+,
+		{
+			"id" : "3_72",
+			"source" : "3",
+			"target" : "72",
+			"name": "vulnD|remoteAccess",
+			"appearances": "31 "}
+,
+		{
+			"id" : "3_73",
+			"source" : "3",
+			"target" : "73",
+			"name": "infoD|nameserver",
+			"appearances": "2 "}
+,
+		{
+			"id" : "3_74",
+			"source" : "3",
+			"target" : "74",
+			"name": "serD|ATCcomm",
+			"appearances": "19 "}
+,
+		{
+			"id" : "3_75",
+			"source" : "3",
+			"target" : "75",
+			"name": "bfCred|email",
+			"appearances": "2 "}
+,
+		{
+			"id" : "3_76",
+			"source" : "3",
+			"target" : "76",
+			"name": "serD|dataSharing",
+			"appearances": "3 "}
+,
+		{
+			"id" : "3_77",
+			"source" : "3",
+			"target" : "77",
+			"name": "serD|storage",
+			"appearances": "4 "}
+,
+		{
+			"id" : "3_78",
+			"source" : "3",
+			"target" : "78",
+			"name": "hostD|wireless",
+			"appearances": "1 "}
+,
+		{
+			"id" : "3_79",
+			"source" : "3",
+			"target" : "79",
+			"name": "delivery|unassigned",
+			"appearances": "1 "}
+,
+		{
+			"id" : "4_1",
+			"source" : "4",
+			"target" : "1",
+			"name": "bfCred|unassigned",
+			"appearances": "6 "}
+,
+		{
+			"id" : "4_2",
+			"source" : "4",
+			"target" : "2",
+			"name": "hostD|http(s)",
+			"appearances": "10 "}
+,
+		{
+			"id" : "4_3",
+			"source" : "4",
+			"target" : "3",
+			"name": "serD|unassigned",
+			"appearances": "261 "}
+,
+		{
+			"id" : "4_69",
+			"source" : "4",
+			"target" : "69",
+			"name": "hostD|remoteAccess",
+			"appearances": "11 "}
+,
+		{
+			"id" : "4_4",
+			"source" : "4",
+			"target" : "4",
+			"name": "vulnD|storage",
+			"appearances": "75 "}
+,
+		{
+			"id" : "4_5",
+			"source" : "4",
+			"target" : "5",
+			"name": "serD|remoteAccess",
+			"appearances": "67 "}
+,
+		{
+			"id" : "4_7",
+			"source" : "4",
+			"target" : "7",
+			"name": "hostD|storage",
+			"appearances": "5 "}
+,
+		{
+			"id" : "4_80",
+			"source" : "4",
+			"target" : "80",
+			"name": "hostD|unassigned",
+			"appearances": "2 "}
+,
+		{
+			"id" : "4_81",
+			"source" : "4",
+			"target" : "81",
+			"name": "surf|http(s)",
+			"appearances": "2 "}
+,
+		{
+			"id" : "4_72",
+			"source" : "4",
+			"target" : "72",
+			"name": "vulnD|remoteAccess",
+			"appearances": "22 "}
+,
+		{
+			"id" : "4_82",
+			"source" : "4",
+			"target" : "82",
+			"name": "surf|storage",
+			"appearances": "2 "}
+,
+		{
+			"id" : "4_83",
+			"source" : "4",
+			"target" : "83",
+			"name": "netDOS|remoteAccess",
+			"appearances": "3 "}
+,
+		{
+			"id" : "4_74",
+			"source" : "4",
+			"target" : "74",
+			"name": "serD|ATCcomm",
+			"appearances": "15 "}
+,
+		{
+			"id" : "4_84",
+			"source" : "4",
+			"target" : "84",
+			"name": "bfCred|email",
+			"appearances": "2 "}
+,
+		{
+			"id" : "4_23",
+			"source" : "4",
+			"target" : "23",
+			"name": "serD|dataSharing",
+			"appearances": "7 "}
+,
+		{
+			"id" : "4_85",
+			"source" : "4",
+			"target" : "85",
+			"name": "serD|storage",
+			"appearances": "17 "}
+,
+		{
+			"id" : "4_86",
+			"source" : "4",
+			"target" : "86",
+			"name": "hostD|wireless",
+			"appearances": "1 "}
+,
+		{
+			"id" : "4_87",
+			"source" : "4",
+			"target" : "87",
+			"name": "serD|broadcast",
+			"appearances": "1 "}
+,
+		{
+			"id" : "5_88",
+			"source" : "5",
+			"target" : "88",
+			"name": "bfCred|unassigned",
+			"appearances": "1 "}
+,
+		{
+			"id" : "5_2",
+			"source" : "5",
+			"target" : "2",
+			"name": "hostD|http(s)",
+			"appearances": "12 "}
+,
+		{
+			"id" : "5_3",
+			"source" : "5",
+			"target" : "3",
+			"name": "serD|unassigned",
+			"appearances": "14 "}
+,
+		{
+			"id" : "5_4",
+			"source" : "5",
+			"target" : "4",
+			"name": "vulnD|storage",
+			"appearances": "44 "}
+,
+		{
+			"id" : "5_5",
+			"source" : "5",
+			"target" : "5",
+			"name": "serD|remoteAccess",
+			"appearances": "15 "}
+,
+		{
+			"id" : "5_89",
+			"source" : "5",
+			"target" : "89",
+			"name": "bfCred|remoteAccess",
+			"appearances": "1 "}
+,
+		{
+			"id" : "5_90",
+			"source" : "5",
+			"target" : "90",
+			"name": "surf|http(s)",
+			"appearances": "3 "}
+,
+		{
+			"id" : "5_91",
+			"source" : "5",
+			"target" : "91",
+			"name": "vulnD|remoteAccess",
+			"appearances": "2 "}
+,
+		{
+			"id" : "5_92",
+			"source" : "5",
+			"target" : "92",
+			"name": "CnC|unassigned",
+			"appearances": "1 "}
+,
+		{
+			"id" : "5_93",
+			"source" : "5",
+			"target" : "93",
+			"name": "infoD|remoteAccess",
+			"appearances": "2 "}
+,
+		{
+			"id" : "7_96",
+			"source" : "7",
+			"target" : "96",
+			"name": "serD|unassigned",
+			"appearances": "4 "}
+,
+		{
+			"id" : "7_97",
+			"source" : "7",
+			"target" : "97",
+			"name": "hostD|remoteAccess",
+			"appearances": "1 "}
+,
+		{
+			"id" : "7_98",
+			"source" : "7",
+			"target" : "98",
+			"name": "vulnD|storage",
+			"appearances": "4 "}
+,
+		{
+			"id" : "7_99",
+			"source" : "7",
+			"target" : "99",
+			"name": "hostD|storage",
+			"appearances": "2 "}
+,
+		{
+			"id" : "7_100",
+			"source" : "7",
+			"target" : "100",
+			"name": "surf|storage",
+			"appearances": "3 "}
+,
+		{
+			"id" : "7_101",
+			"source" : "7",
+			"target" : "101",
+			"name": "serD|ATCcomm",
+			"appearances": "1 "}
+,
+		{
+			"id" : "7_102",
+			"source" : "7",
+			"target" : "102",
+			"name": "bfCred|email",
+			"appearances": "1 "}
+,
+		{
+			"id" : "9_106",
+			"source" : "9",
+			"target" : "106",
+			"name": "vulnD|storage",
+			"appearances": "4 "}
+,
+		{
+			"id" : "10_107",
+			"source" : "10",
+			"target" : "107",
+			"name": "hostD|http(s)",
+			"appearances": "2 "}
+,
+		{
+			"id" : "10_108",
+			"source" : "10",
+			"target" : "108",
+			"name": "serD|unassigned",
+			"appearances": "1 "}
+,
+		{
+			"id" : "10_109",
+			"source" : "10",
+			"target" : "109",
+			"name": "vulnD|storage",
+			"appearances": "3 "}
+,
+		{
+			"id" : "10_110",
+			"source" : "10",
+			"target" : "110",
+			"name": "exfil|http(s)",
+			"appearances": "1 "}
+,
+		{
+			"id" : "10_314",
+			"source" : "10",
+			"target" : "314",
+			"name": "infoD|http(s)",
+			"appearances": "18 "}
+,
+		{
+			"id" : "10_111",
+			"source" : "10",
+			"target" : "111",
+			"name": "surf|http(s)",
+			"appearances": "1 "}
+,
+		{
+			"id" : "10_112",
+			"source" : "10",
+			"target" : "112",
+			"name": "delivery|http(s)",
+			"appearances": "2 "}
+,
+		{
+			"id" : "10_113",
+			"source" : "10",
+			"target" : "113",
+			"name": "vulnD|http(s)",
+			"appearances": "4 "}
+,
+		{
+			"id" : "10_114",
+			"source" : "10",
+			"target" : "114",
+			"name": "ACE|http(s)",
+			"appearances": "40 "}
+,
+		{
+			"id" : "10_115",
+			"source" : "10",
+			"target" : "115",
+			"name": "acctManip|broadcast",
+			"appearances": "3 "}
+,
+		{
+			"id" : "15_124",
+			"source" : "15",
+			"target" : "124",
+			"name": "exfil|http(s)",
+			"appearances": "28 "}
+,
+		{
+			"id" : "15_125",
+			"source" : "15",
+			"target" : "125",
+			"name": "surf|http(s)",
+			"appearances": "1 "}
+,
+		{
+			"id" : "15_126",
+			"source" : "15",
+			"target" : "126",
+			"name": "ACE|broadcast",
+			"appearances": "2 "}
+,
+		{
+			"id" : "15_127",
+			"source" : "15",
+			"target" : "127",
+			"name": "netDOS|broadcast",
+			"appearances": "1 "}
+,
+		{
+			"id" : "16_128",
+			"source" : "16",
+			"target" : "128",
+			"name": "vulnD|storage",
+			"appearances": "1 "}
+,
+		{
+			"id" : "16_129",
+			"source" : "16",
+			"target" : "129",
+			"name": "ACE|storage",
+			"appearances": "7 "}
+,
+		{
+			"id" : "16_130",
+			"source" : "16",
+			"target" : "130",
+			"name": "delivery|storage",
+			"appearances": "1 "}
+,
+		{
+			"id" : "18_133",
+			"source" : "18",
+			"target" : "133",
+			"name": "bfCred|unassigned",
+			"appearances": "3 "}
+,
+		{
+			"id" : "18_134",
+			"source" : "18",
+			"target" : "134",
+			"name": "serD|unassigned",
+			"appearances": "1 "}
+,
+		{
+			"id" : "18_4",
+			"source" : "18",
+			"target" : "4",
+			"name": "vulnD|storage",
+			"appearances": "14 "}
+,
+		{
+			"id" : "18_135",
+			"source" : "18",
+			"target" : "135",
+			"name": "vulnD|remoteAccess",
+			"appearances": "1 "}
+,
+		{
+			"id" : "18_18",
+			"source" : "18",
+			"target" : "18",
+			"name": "netDOS|remoteAccess",
+			"appearances": "6 "}
+,
+		{
+			"id" : "18_19",
+			"source" : "18",
+			"target" : "19",
+			"name": "CnC|unassigned",
+			"appearances": "33 "}
+,
+		{
+			"id" : "18_136",
+			"source" : "18",
+			"target" : "136",
+			"name": "bfCred|email",
+			"appearances": "2 "}
+,
+		{
+			"id" : "18_137",
+			"source" : "18",
+			"target" : "137",
+			"name": "serD|dataSharing",
+			"appearances": "1 "}
+,
+		{
+			"id" : "18_138",
+			"source" : "18",
+			"target" : "138",
+			"name": "exfil|dataSharing",
+			"appearances": "3 "}
+,
+		{
+			"id" : "18_139",
+			"source" : "18",
+			"target" : "139",
+			"name": "ACE|dataSharing",
+			"appearances": "3 "}
+,
+		{
+			"id" : "18_140",
+			"source" : "18",
+			"target" : "140",
+			"name": "remoteexp|broadcast",
+			"appearances": "2 "}
+,
+		{
+			"id" : "18_141",
+			"source" : "18",
+			"target" : "141",
+			"name": "ACE|remoteAccess",
+			"appearances": "1 "}
+,
+		{
+			"id" : "19_142",
+			"source" : "19",
+			"target" : "142",
+			"name": "bfCred|unassigned",
+			"appearances": "1 "}
+,
+		{
+			"id" : "19_143",
+			"source" : "19",
+			"target" : "143",
+			"name": "hostD|http(s)",
+			"appearances": "3 "}
+,
+		{
+			"id" : "19_3",
+			"source" : "19",
+			"target" : "3",
+			"name": "serD|unassigned",
+			"appearances": "6 "}
+,
+		{
+			"id" : "19_144",
+			"source" : "19",
+			"target" : "144",
+			"name": "hostD|remoteAccess",
+			"appearances": "2 "}
+,
+		{
+			"id" : "19_4",
+			"source" : "19",
+			"target" : "4",
+			"name": "vulnD|storage",
+			"appearances": "37 "}
+,
+		{
+			"id" : "19_145",
+			"source" : "19",
+			"target" : "145",
+			"name": "serD|remoteAccess",
+			"appearances": "2 "}
+,
+		{
+			"id" : "19_146",
+			"source" : "19",
+			"target" : "146",
+			"name": "surf|http(s)",
+			"appearances": "1 "}
+,
+		{
+			"id" : "19_147",
+			"source" : "19",
+			"target" : "147",
+			"name": "netDOS|remoteAccess",
+			"appearances": "1 "}
+,
+		{
+			"id" : "19_19",
+			"source" : "19",
+			"target" : "19",
+			"name": "CnC|unassigned",
+			"appearances": "6 "}
+,
+		{
+			"id" : "19_148",
+			"source" : "19",
+			"target" : "148",
+			"name": "rPrivEsc|remoteAccess",
+			"appearances": "2 "}
+,
+		{
+			"id" : "19_149",
+			"source" : "19",
+			"target" : "149",
+			"name": "serD|storage",
+			"appearances": "2 "}
+,
+		{
+			"id" : "19_150",
+			"source" : "19",
+			"target" : "150",
+			"name": "acctManip|broadcast",
+			"appearances": "1 "}
+,
+		{
+			"id" : "19_196",
+			"source" : "19",
+			"target" : "196",
+			"name": "remoteexp|broadcast",
+			"appearances": "6 "}
+,
+		{
+			"id" : "19_151",
+			"source" : "19",
+			"target" : "151",
+			"name": "rPrivEsc|unassigned",
+			"appearances": "3 "}
+,
+		{
+			"id" : "22_157",
+			"source" : "22",
+			"target" : "157",
+			"name": "serD|unassigned",
+			"appearances": "3 "}
+,
+		{
+			"id" : "22_4",
+			"source" : "22",
+			"target" : "4",
+			"name": "vulnD|storage",
+			"appearances": "15 "}
+,
+		{
+			"id" : "22_158",
+			"source" : "22",
+			"target" : "158",
+			"name": "serD|remoteAccess",
+			"appearances": "4 "}
+,
+		{
+			"id" : "22_159",
+			"source" : "22",
+			"target" : "159",
+			"name": "bfCred|email",
+			"appearances": "1 "}
+,
+		{
+			"id" : "23_160",
+			"source" : "23",
+			"target" : "160",
+			"name": "vulnD|storage",
+			"appearances": "2 "}
+,
+		{
+			"id" : "23_161",
+			"source" : "23",
+			"target" : "161",
+			"name": "serD|remoteAccess",
+			"appearances": "1 "}
+,
+		{
+			"id" : "23_162",
+			"source" : "23",
+			"target" : "162",
+			"name": "serD|dataSharing",
+			"appearances": "3 "}
+,
+		{
+			"id" : "23_163",
+			"source" : "23",
+			"target" : "163",
+			"name": "serD|storage",
+			"appearances": "1 "}
+,
+		{
+			"id" : "24_164",
+			"source" : "24",
+			"target" : "164",
+			"name": "serD|unassigned",
+			"appearances": "1 "}
+,
+		{
+			"id" : "24_165",
+			"source" : "24",
+			"target" : "165",
+			"name": "vulnD|storage",
+			"appearances": "1 "}
+,
+		{
+			"id" : "24_18",
+			"source" : "24",
+			"target" : "18",
+			"name": "netDOS|remoteAccess",
+			"appearances": "12 "}
+,
+		{
+			"id" : "24_166",
+			"source" : "24",
+			"target" : "166",
+			"name": "CnC|unassigned",
+			"appearances": "4 "}
+,
+		{
+			"id" : "24_24",
+			"source" : "24",
+			"target" : "24",
+			"name": "exfil|dataSharing",
+			"appearances": "12 "}
+,
+		{
+			"id" : "24_167",
+			"source" : "24",
+			"target" : "167",
+			"name": "ACE|dataSharing",
+			"appearances": "11 "}
+,
+		{
+			"id" : "24_168",
+			"source" : "24",
+			"target" : "168",
+			"name": "netDOS|clocksync",
+			"appearances": "1 "}
+,
+		{
+			"id" : "28_172",
+			"source" : "28",
+			"target" : "172",
+			"name": "hostD|unassigned",
+			"appearances": "1 "}
+,
+		{
+			"id" : "28_173",
+			"source" : "28",
+			"target" : "173",
+			"name": "exfil|unassigned",
+			"appearances": "1 "}
+,
+		{
+			"id" : "28_174",
+			"source" : "28",
+			"target" : "174",
+			"name": "ACE|unassigned",
+			"appearances": "14 "}
+,
+		{
+			"id" : "28_175",
+			"source" : "28",
+			"target" : "175",
+			"name": "acctManip|broadcast",
+			"appearances": "3 "}
+,
+		{
+			"id" : "28_176",
+			"source" : "28",
+			"target" : "176",
+			"name": "ACE|broadcast",
+			"appearances": "3 "}
+,
+		{
+			"id" : "28_177",
+			"source" : "28",
+			"target" : "177",
+			"name": "netDOS|broadcast",
+			"appearances": "1 "}
+,
+		{
+			"id" : "28_178",
+			"source" : "28",
+			"target" : "178",
+			"name": "bfCred|surveillance",
+			"appearances": "1 "}
+,
+		{
+			"id" : "32_184",
+			"source" : "32",
+			"target" : "184",
+			"name": "bfCred|unassigned",
+			"appearances": "2 "}
+,
+		{
+			"id" : "32_185",
+			"source" : "32",
+			"target" : "185",
+			"name": "vulnD|storage",
+			"appearances": "3 "}
+,
+		{
+			"id" : "32_314",
+			"source" : "32",
+			"target" : "314",
+			"name": "infoD|http(s)",
+			"appearances": "5 "}
+,
+		{
+			"id" : "32_186",
+			"source" : "32",
+			"target" : "186",
+			"name": "infoD|nameserver",
+			"appearances": "2 "}
+,
+		{
+			"id" : "32_187",
+			"source" : "32",
+			"target" : "187",
+			"name": "CnC|unassigned",
+			"appearances": "1 "}
+,
+		{
+			"id" : "32_188",
+			"source" : "32",
+			"target" : "188",
+			"name": "serD|dataSharing",
+			"appearances": "1 "}
+,
+		{
+			"id" : "32_189",
+			"source" : "32",
+			"target" : "189",
+			"name": "serD|storage",
+			"appearances": "1 "}
+,
+		{
+			"id" : "32_32",
+			"source" : "32",
+			"target" : "32",
+			"name": "acctManip|broadcast",
+			"appearances": "30 "}
+,
+		{
+			"id" : "32_33",
+			"source" : "32",
+			"target" : "33",
+			"name": "ACE|broadcast",
+			"appearances": "5 "}
+,
+		{
+			"id" : "32_190",
+			"source" : "32",
+			"target" : "190",
+			"name": "remoteexp|broadcast",
+			"appearances": "1 "}
+,
+		{
+			"id" : "32_191",
+			"source" : "32",
+			"target" : "191",
+			"name": "ACE|remoteAccess",
+			"appearances": "1 "}
+,
+		{
+			"id" : "33_4",
+			"source" : "33",
+			"target" : "4",
+			"name": "vulnD|storage",
+			"appearances": "8 "}
+,
+		{
+			"id" : "33_192",
+			"source" : "33",
+			"target" : "192",
+			"name": "infoD|http(s)",
+			"appearances": "2 "}
+,
+		{
+			"id" : "33_193",
+			"source" : "33",
+			"target" : "193",
+			"name": "vulnD|remoteAccess",
+			"appearances": "2 "}
+,
+		{
+			"id" : "33_194",
+			"source" : "33",
+			"target" : "194",
+			"name": "bfCred|email",
+			"appearances": "2 "}
+,
+		{
+			"id" : "33_195",
+			"source" : "33",
+			"target" : "195",
+			"name": "acctManip|broadcast",
+			"appearances": "3 "}
+,
+		{
+			"id" : "33_34",
+			"source" : "33",
+			"target" : "34",
+			"name": "infoD|remoteAccess",
+			"appearances": "10 "}
+,
+		{
+			"id" : "33_196",
+			"source" : "33",
+			"target" : "196",
+			"name": "remoteexp|broadcast",
+			"appearances": "18 "}
+,
+		{
+			"id" : "34_197",
+			"source" : "34",
+			"target" : "197",
+			"name": "hostD|http(s)",
+			"appearances": "3 "}
+,
+		{
+			"id" : "34_3",
+			"source" : "34",
+			"target" : "3",
+			"name": "serD|unassigned",
+			"appearances": "5 "}
+,
+		{
+			"id" : "34_4",
+			"source" : "34",
+			"target" : "4",
+			"name": "vulnD|storage",
+			"appearances": "16 "}
+,
+		{
+			"id" : "34_198",
+			"source" : "34",
+			"target" : "198",
+			"name": "serD|remoteAccess",
+			"appearances": "1 "}
+,
+		{
+			"id" : "34_199",
+			"source" : "34",
+			"target" : "199",
+			"name": "hostD|storage",
+			"appearances": "1 "}
+,
+		{
+			"id" : "34_200",
+			"source" : "34",
+			"target" : "200",
+			"name": "vulnD|remoteAccess",
+			"appearances": "3 "}
+,
+		{
+			"id" : "34_201",
+			"source" : "34",
+			"target" : "201",
+			"name": "vulnD|http(s)",
+			"appearances": "1 "}
+,
+		{
+			"id" : "34_202",
+			"source" : "34",
+			"target" : "202",
+			"name": "infoD|remoteAccess",
+			"appearances": "1 "}
+,
+		{
+			"id" : "35_203",
+			"source" : "35",
+			"target" : "203",
+			"name": "serD|unassigned",
+			"appearances": "1 "}
+,
+		{
+			"id" : "35_204",
+			"source" : "35",
+			"target" : "204",
+			"name": "vulnD|storage",
+			"appearances": "1 "}
+,
+		{
+			"id" : "35_33",
+			"source" : "35",
+			"target" : "33",
+			"name": "ACE|broadcast",
+			"appearances": "12 "}
+,
+		{
+			"id" : "35_205",
+			"source" : "35",
+			"target" : "205",
+			"name": "remoteexp|broadcast",
+			"appearances": "1 "}
+,
+		{
+			"id" : "36_28",
+			"source" : "36",
+			"target" : "28",
+			"name": "exfil|unassigned",
+			"appearances": "7 "}
+,
+		{
+			"id" : "36_206",
+			"source" : "36",
+			"target" : "206",
+			"name": "exfil|remoteAccess",
+			"appearances": "2 "}
+,
+		{
+			"id" : "38_208",
+			"source" : "38",
+			"target" : "208",
+			"name": "CnC|unassigned",
+			"appearances": "1 "}
+,
+		{
+			"id" : "38_209",
+			"source" : "38",
+			"target" : "209",
+			"name": "uPrivEsc|remoteAccess",
+			"appearances": "1 "}
+,
+		{
+			"id" : "38_210",
+			"source" : "38",
+			"target" : "210",
+			"name": "exfil|remoteAccess",
+			"appearances": "7 "}
+,
+		{
+			"id" : "69_254",
+			"source" : "69",
+			"target" : "254",
+			"name": "hostD|http(s)",
+			"appearances": "2 "}
+,
+		{
+			"id" : "69_3",
+			"source" : "69",
+			"target" : "3",
+			"name": "serD|unassigned",
+			"appearances": "5 "}
+,
+		{
+			"id" : "69_255",
+			"source" : "69",
+			"target" : "255",
+			"name": "vulnD|storage",
+			"appearances": "1 "}
+,
+		{
+			"id" : "69_256",
+			"source" : "69",
+			"target" : "256",
+			"name": "serD|remoteAccess",
+			"appearances": "1 "}
+,
+		{
+			"id" : "69_257",
+			"source" : "69",
+			"target" : "257",
+			"name": "surf|storage",
+			"appearances": "1 "}
+,
+		{
+			"id" : "72_3",
+			"source" : "72",
+			"target" : "3",
+			"name": "serD|unassigned",
+			"appearances": "41 "}
+,
+		{
+			"id" : "72_4",
+			"source" : "72",
+			"target" : "4",
+			"name": "vulnD|storage",
+			"appearances": "6 "}
+,
+		{
+			"id" : "72_258",
+			"source" : "72",
+			"target" : "258",
+			"name": "serD|remoteAccess",
+			"appearances": "4 "}
+,
+		{
+			"id" : "72_259",
+			"source" : "72",
+			"target" : "259",
+			"name": "serD|ATCcomm",
+			"appearances": "1 "}
+,
+		{
+			"id" : "72_260",
+			"source" : "72",
+			"target" : "260",
+			"name": "serD|storage",
+			"appearances": "4 "}
+,
+		{
+			"id" : "72_261",
+			"source" : "72",
+			"target" : "261",
+			"name": "serD|broadcast",
+			"appearances": "2 "}
+,
+		{
+			"id" : "72_262",
+			"source" : "72",
+			"target" : "262",
+			"name": "serD|surveillance",
+			"appearances": "1 "}
+,
+		{
+			"id" : "74_264",
+			"source" : "74",
+			"target" : "264",
+			"name": "hostD|http(s)",
+			"appearances": "3 "}
+,
+		{
+			"id" : "74_3",
+			"source" : "74",
+			"target" : "3",
+			"name": "serD|unassigned",
+			"appearances": "11 "}
+,
+		{
+			"id" : "74_4",
+			"source" : "74",
+			"target" : "4",
+			"name": "vulnD|storage",
+			"appearances": "12 "}
+,
+		{
+			"id" : "85_273",
+			"source" : "85",
+			"target" : "273",
+			"name": "hostD|http(s)",
+			"appearances": "1 "}
+,
+		{
+			"id" : "85_274",
+			"source" : "85",
+			"target" : "274",
+			"name": "serD|unassigned",
+			"appearances": "2 "}
+,
+		{
+			"id" : "85_275",
+			"source" : "85",
+			"target" : "275",
+			"name": "hostD|remoteAccess",
+			"appearances": "2 "}
+,
+		{
+			"id" : "85_276",
+			"source" : "85",
+			"target" : "276",
+			"name": "vulnD|storage",
+			"appearances": "2 "}
+,
+		{
+			"id" : "114_314",
+			"source" : "114",
+			"target" : "314",
+			"name": "infoD|http(s)",
+			"appearances": "34 "}
+,
+		{
+			"id" : "114_315",
+			"source" : "114",
+			"target" : "315",
+			"name": "CnC|unassigned",
+			"appearances": "1 "}
+,
+		{
+			"id" : "114_32",
+			"source" : "114",
+			"target" : "32",
+			"name": "acctManip|broadcast",
+			"appearances": "5 "}
+,
+		{
+			"id" : "124_744",
+			"source" : "124",
+			"target" : "744",
+			"name": "surf|http(s)",
+			"appearances": "6 "}
+,
+		{
+			"id" : "124_326",
+			"source" : "124",
+			"target" : "326",
+			"name": "netDOS|remoteAccess",
+			"appearances": "1 "}
+,
+		{
+			"id" : "124_327",
+			"source" : "124",
+			"target" : "327",
+			"name": "ACE|dataSharing",
+			"appearances": "1 "}
+,
+		{
+			"id" : "124_328",
+			"source" : "124",
+			"target" : "328",
+			"name": "netDOS|http(s)",
+			"appearances": "1 "}
+,
+		{
+			"id" : "124_329",
+			"source" : "124",
+			"target" : "329",
+			"name": "privEsc|http(s)",
+			"appearances": "3 "}
+,
+		{
+			"id" : "124_330",
+			"source" : "124",
+			"target" : "330",
+			"name": "uPrivEsc|http(s)",
+			"appearances": "4 "}
+,
+		{
+			"id" : "124_331",
+			"source" : "124",
+			"target" : "331",
+			"name": "acctManip|broadcast",
+			"appearances": "4 "}
+,
+		{
+			"id" : "124_33",
+			"source" : "124",
+			"target" : "33",
+			"name": "ACE|broadcast",
+			"appearances": "5 "}
+,
+		{
+			"id" : "124_332",
+			"source" : "124",
+			"target" : "332",
+			"name": "remoteexp|broadcast",
+			"appearances": "2 "}
+,
+		{
+			"id" : "124_333",
+			"source" : "124",
+			"target" : "333",
+			"name": "netDOS|broadcast",
+			"appearances": "1 "}
+,
+		{
+			"id" : "129_339",
+			"source" : "129",
+			"target" : "339",
+			"name": "infoD|storage",
+			"appearances": "7 "}
+,
+		{
+			"id" : "167_389",
+			"source" : "167",
+			"target" : "389",
+			"name": "serD|unassigned",
+			"appearances": "1 "}
+,
+		{
+			"id" : "167_390",
+			"source" : "167",
+			"target" : "390",
+			"name": "vulnD|storage",
+			"appearances": "3 "}
+,
+		{
+			"id" : "167_391",
+			"source" : "167",
+			"target" : "391",
+			"name": "vulnD|remoteAccess",
+			"appearances": "1 "}
+,
+		{
+			"id" : "167_392",
+			"source" : "167",
+			"target" : "392",
+			"name": "bfCred|email",
+			"appearances": "1 "}
+,
+		{
+			"id" : "167_393",
+			"source" : "167",
+			"target" : "393",
+			"name": "serD|dataSharing",
+			"appearances": "2 "}
+,
+		{
+			"id" : "167_394",
+			"source" : "167",
+			"target" : "394",
+			"name": "exfil|dataSharing",
+			"appearances": "1 "}
+,
+		{
+			"id" : "167_395",
+			"source" : "167",
+			"target" : "395",
+			"name": "CnC|remoteAccess",
+			"appearances": "1 "}
+,
+		{
+			"id" : "167_167",
+			"source" : "167",
+			"target" : "167",
+			"name": "ACE|dataSharing",
+			"appearances": "5 "}
+,
+		{
+			"id" : "167_396",
+			"source" : "167",
+			"target" : "396",
+			"name": "acctManip|broadcast",
+			"appearances": "4 "}
+,
+		{
+			"id" : "174_403",
+			"source" : "174",
+			"target" : "403",
+			"name": "surf|unassigned",
+			"appearances": "1 "}
+,
+		{
+			"id" : "174_404",
+			"source" : "174",
+			"target" : "404",
+			"name": "infoD|unassigned",
+			"appearances": "13 "}
+,
+		{
+			"id" : "196_435",
+			"source" : "196",
+			"target" : "435",
+			"name": "bfCred|unassigned",
+			"appearances": "1 "}
+,
+		{
+			"id" : "196_436",
+			"source" : "196",
+			"target" : "436",
+			"name": "bfCred|email",
+			"appearances": "2 "}
+,
+		{
+			"id" : "196_437",
+			"source" : "196",
+			"target" : "437",
+			"name": "acctManip|broadcast",
+			"appearances": "25 "}
+,
+		{
+			"id" : "196_438",
+			"source" : "196",
+			"target" : "438",
+			"name": "infoD|remoteAccess",
+			"appearances": "3 "}
+,
+		{
+			"id" : "210_18",
+			"source" : "210",
+			"target" : "18",
+			"name": "netDOS|remoteAccess",
+			"appearances": "6 "}
+,
+		{
+			"id" : "210_453",
+			"source" : "210",
+			"target" : "453",
+			"name": "CnC|unassigned",
+			"appearances": "1 "}
+,
+		{
+			"id" : "314_540",
+			"source" : "314",
+			"target" : "540",
+			"name": "hostD|http(s)",
+			"appearances": "15 "}
+,
+		{
+			"id" : "314_541",
+			"source" : "314",
+			"target" : "541",
+			"name": "serD|unassigned",
+			"appearances": "3 "}
+,
+		{
+			"id" : "314_542",
+			"source" : "314",
+			"target" : "542",
+			"name": "vulnD|storage",
+			"appearances": "13 "}
+,
+		{
+			"id" : "314_543",
+			"source" : "314",
+			"target" : "543",
+			"name": "serD|remoteAccess",
+			"appearances": "1 "}
+,
+		{
+			"id" : "314_744",
+			"source" : "314",
+			"target" : "744",
+			"name": "surf|http(s)",
+			"appearances": "5 "}
+,
+		{
+			"id" : "314_544",
+			"source" : "314",
+			"target" : "544",
+			"name": "serD|dataSharing",
+			"appearances": "1 "}
+,
+		{
+			"id" : "314_545",
+			"source" : "314",
+			"target" : "545",
+			"name": "vulnD|http(s)",
+			"appearances": "19 "}
+,
+		{
+			"id" : "339_4",
+			"source" : "339",
+			"target" : "4",
+			"name": "vulnD|storage",
+			"appearances": "6 "}
+,
+		{
+			"id" : "339_573",
+			"source" : "339",
+			"target" : "573",
+			"name": "hostD|storage",
+			"appearances": "1 "}
+,
+		{
+			"id" : "404_622",
+			"source" : "404",
+			"target" : "622",
+			"name": "vulnD|storage",
+			"appearances": "2 "}
+,
+		{
+			"id" : "404_623",
+			"source" : "404",
+			"target" : "623",
+			"name": "hostD|unassigned",
+			"appearances": "4 "}
+,
+		{
+			"id" : "404_624",
+			"source" : "404",
+			"target" : "624",
+			"name": "surf|unassigned",
+			"appearances": "2 "}
+,
+		{
+			"id" : "404_625",
+			"source" : "404",
+			"target" : "625",
+			"name": "vulnD|unassigned",
+			"appearances": "5 "}
+,
+		{
+			"id" : "437_647",
+			"source" : "437",
+			"target" : "647",
+			"name": "bfCred|unassigned",
+			"appearances": "2 "}
+,
+		{
+			"id" : "437_648",
+			"source" : "437",
+			"target" : "648",
+			"name": "hostD|remoteAccess",
+			"appearances": "1 "}
+,
+		{
+			"id" : "437_649",
+			"source" : "437",
+			"target" : "649",
+			"name": "vulnD|storage",
+			"appearances": "1 "}
+,
+		{
+			"id" : "437_650",
+			"source" : "437",
+			"target" : "650",
+			"name": "bfCred|email",
+			"appearances": "1 "}
+,
+		{
+			"id" : "437_34",
+			"source" : "437",
+			"target" : "34",
+			"name": "infoD|remoteAccess",
+			"appearances": "20 "}
+,
+		{
+			"id" : "540_744",
+			"source" : "540",
+			"target" : "744",
+			"name": "surf|http(s)",
+			"appearances": "21 "}
+,
+		{
+			"id" : "542_540",
+			"source" : "542",
+			"target" : "540",
+			"name": "hostD|http(s)",
+			"appearances": "6 "}
+,
+		{
+			"id" : "542_733",
+			"source" : "542",
+			"target" : "733",
+			"name": "serD|unassigned",
+			"appearances": "2 "}
+,
+		{
+			"id" : "542_734",
+			"source" : "542",
+			"target" : "734",
+			"name": "serD|remoteAccess",
+			"appearances": "1 "}
+,
+		{
+			"id" : "542_735",
+			"source" : "542",
+			"target" : "735",
+			"name": "hostD|storage",
+			"appearances": "1 "}
+,
+		{
+			"id" : "542_736",
+			"source" : "542",
+			"target" : "736",
+			"name": "surf|http(s)",
+			"appearances": "2 "}
+,
+		{
+			"id" : "542_737",
+			"source" : "542",
+			"target" : "737",
+			"name": "serD|broadcast",
+			"appearances": "1 "}
+,
+		{
+			"id" : "545_2",
+			"source" : "545",
+			"target" : "2",
+			"name": "hostD|http(s)",
+			"appearances": "5 "}
+,
+		{
+			"id" : "545_740",
+			"source" : "545",
+			"target" : "740",
+			"name": "serD|unassigned",
+			"appearances": "1 "}
+,
+		{
+			"id" : "545_741",
+			"source" : "545",
+			"target" : "741",
+			"name": "hostD|remoteAccess",
+			"appearances": "1 "}
+,
+		{
+			"id" : "545_742",
+			"source" : "545",
+			"target" : "742",
+			"name": "vulnD|storage",
+			"appearances": "2 "}
+,
+		{
+			"id" : "545_743",
+			"source" : "545",
+			"target" : "743",
+			"name": "serD|remoteAccess",
+			"appearances": "1 "}
+,
+		{
+			"id" : "545_744",
+			"source" : "545",
+			"target" : "744",
+			"name": "surf|http(s)",
+			"appearances": "14 "}
+,
+		{
+			"id" : "625_800",
+			"source" : "625",
+			"target" : "800",
+			"name": "hostD|unassigned",
+			"appearances": "4 "}
+,
+		{
+			"id" : "625_801",
+			"source" : "625",
+			"target" : "801",
+			"name": "surf|unassigned",
+			"appearances": "1 "}
+,
+		{
+			"id" : "744_2",
+			"source" : "744",
+			"target" : "2",
+			"name": "hostD|http(s)",
+			"appearances": "5 "}
+,
+		{
+			"id" : "744_3",
+			"source" : "744",
+			"target" : "3",
+			"name": "serD|unassigned",
+			"appearances": "5 "}
+,
+		{
+			"id" : "744_4",
+			"source" : "744",
+			"target" : "4",
+			"name": "vulnD|storage",
+			"appearances": "11 "}
+,
+		{
+			"id" : "744_889",
+			"source" : "744",
+			"target" : "889",
+			"name": "serD|remoteAccess",
+			"appearances": "2 "}
+,
+		{
+			"id" : "744_890",
+			"source" : "744",
+			"target" : "890",
+			"name": "exfil|http(s)",
+			"appearances": "1 "}
+,
+		{
+			"id" : "744_891",
+			"source" : "744",
+			"target" : "891",
+			"name": "surf|http(s)",
+			"appearances": "4 "}
+,
+		{
+			"id" : "744_892",
+			"source" : "744",
+			"target" : "892",
+			"name": "vulnD|remoteAccess",
+			"appearances": "1 "}
+,
+		{
+			"id" : "744_893",
+			"source" : "744",
+			"target" : "893",
+			"name": "serD|dataSharing",
+			"appearances": "1 "}
+
+	]
+}

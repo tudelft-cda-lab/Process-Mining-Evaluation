@@ -1,0 +1,90 @@
+digraph {
+	rankdir="TB";
+	node_start [label="start",shape=square];
+	node_end [label="end",shape=square];
+	task_0 [label="infoD
+surveillance",fillcolor=white,style=filled];
+	task_1 [label="delivery
+http(s)",fillcolor=orangered,style=filled];
+	task_2 [label="exfil
+surveillance",fillcolor=orangered,style=filled];
+	task_3 [label="exfil
+http(s)",fillcolor=orangered,style=filled];
+	task_4 [label="dManip
+http(s)",fillcolor=orangered,style=filled];
+	task_5 [label="rPrivEsc
+surveillance",fillcolor=dodgerblue,style=filled];
+	task_6 [label="delivery
+surveillance",fillcolor=orangered,style=filled];
+	task_7 [label="ACE
+surveillance",fillcolor=dodgerblue,style=filled];
+	task_8 [label="delivery
+wireless",fillcolor=orangered,style=filled];
+	task_9 [label="delivery
+hostingServer",fillcolor=orangered,style=filled];
+	task_10 [label="exfil
+unassigned",fillcolor=orangered,style=filled];
+	task_11 [label="delivery
+unassigned",fillcolor=orangered,style=filled];
+	task_12 [label="exfil
+hostingServer",fillcolor=orangered,style=filled];
+	task_13 [label="resHJ
+surveillance",fillcolor=orangered,style=filled];
+	task_14 [label="dManip
+hostingServer",fillcolor=orangered,style=filled];
+	task_15 [label="dManip
+surveillance",fillcolor=orangered,style=filled];
+	task_16 [label="resHJ
+http(s)",fillcolor=orangered,style=filled];
+	task_17 [label="exfil
+broadcast",fillcolor=orangered,style=filled];
+	task_18 [label="dDestruct
+remoteAccess",fillcolor=orangered,style=filled];
+	task_19 [label="netDOS
+http(s)",fillcolor=orangered,style=filled];
+	xor_split_0 [label="×",shape=diamond,fillcolor=yellow,style=filled,fontsize=18];
+	xor_join_1 [label="×",shape=diamond,fillcolor=yellow,style=filled,fontsize=18];
+
+	xor_split_0 -> task_15;
+	xor_split_0 -> task_11;
+	xor_split_0 -> task_0;
+	xor_split_0 -> task_18;
+	xor_split_0 -> task_7;
+	xor_split_0 -> task_17;
+	xor_split_0 -> task_9;
+	xor_split_0 -> task_6;
+	xor_split_0 -> task_2;
+	xor_split_0 -> task_16;
+	xor_split_0 -> task_14;
+	xor_split_0 -> task_8;
+	xor_split_0 -> task_4;
+	xor_split_0 -> task_13;
+	xor_split_0 -> task_1;
+	xor_split_0 -> task_12;
+	xor_split_0 -> task_10;
+	xor_split_0 -> task_3;
+	xor_split_0 -> task_5;
+	xor_split_0 -> task_19;
+	task_19 -> xor_join_1;
+	task_3 -> xor_join_1;
+	task_12 -> xor_join_1;
+	task_13 -> xor_join_1;
+	task_17 -> xor_join_1;
+	task_16 -> xor_join_1;
+	task_7 -> xor_join_1;
+	task_11 -> xor_join_1;
+	task_5 -> xor_join_1;
+	task_15 -> xor_join_1;
+	task_4 -> xor_join_1;
+	task_9 -> xor_join_1;
+	task_1 -> xor_join_1;
+	task_10 -> xor_join_1;
+	task_2 -> xor_join_1;
+	task_6 -> xor_join_1;
+	task_14 -> xor_join_1;
+	task_8 -> xor_join_1;
+	task_18 -> xor_join_1;
+	task_0 -> xor_join_1;
+	node_start -> xor_split_0;
+	xor_join_1 -> node_end;
+}
